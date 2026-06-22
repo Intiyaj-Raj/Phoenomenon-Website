@@ -276,6 +276,7 @@ footer {
   position: relative;
   margin-top: -90vh;
   padding: 80px 35px;
+  background: #ffff;
 }
 .space-text,
 .sticky-footer {
@@ -291,7 +292,7 @@ footer {
   position: relative;
   z-index: 2;
   padding: 20px 35px;
-  background: white;
+  background: #ffff;
 }
 
 #p2-container {

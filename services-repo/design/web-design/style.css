@@ -181,6 +181,9 @@
   object-fit: cover;
   object-position: center;
 }
+.process-img h1 {
+  text-align: center;
+}
 /* ==========================
    Web Design Awards Section
 ========================== */
@@ -298,6 +301,9 @@
   background: white;
   padding: 80px 35px;
 }
+.mob-faq-btn {
+  display: none;
+}
 
 .faq-item {
   display: flex;
@@ -308,7 +314,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.faq-number {
+.number-faq {
   font-size: 12px;
   min-width: 50px;
   font-weight: 600;
@@ -343,8 +349,8 @@
 }
 .faq-answer p {
   margin-top: 20px;
-  max-width: 100%;
-  line-height: 1.7;
+  width: 100%;
+  line-height: 1.5;
 }
 
 .more {
@@ -452,5 +458,30 @@
   }
   .mob-design-card h2 {
     padding: 15px 0;
+  }
+  .faq-btn {
+    display: none;
+  }
+  .mob-faq-btn {
+    display: block;
+  }
+  .faq-item {
+    flex-direction: column;
+  }
+
+  .faq-number {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .faq-ques {
+    width: 100%;
+  }
+
+  .faq-answer {
+    overflow: visible;
+    opacity: 0;
+    width: 100%;
   }
 }

@@ -1,0 +1,456 @@
+.p3-right {
+  width: 50%;
+}
+.p3-right p {
+  font-size: 26px;
+  line-height: 1.4;
+  color: #555;
+  font-weight: 400;
+}
+
+/* industry container */
+.industry-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 40px 0;
+}
+.industry-card {
+  width: 100%;
+}
+
+.industry-card-cont {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: none;
+}
+
+.industry-card-card {
+  position: relative;
+  min-height: 350px;
+}
+
+.box-num,
+.box-icon i {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  color: #908f8d;
+  padding: 20px;
+  font-weight: 600;
+}
+.box-icon i {
+  font-size: 28px !important;
+}
+
+.p4-box-bottom {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+}
+.box-text {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.box-text p:first-child {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+}
+.box-text p:nth-child(2) {
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+}
+.box-text {
+  padding: 20px;
+}
+.box-text p:last-child {
+  color: #908f8d;
+}
+
+.industry-card-box,
+.box-border {
+  display: none;
+}
+
+/* =========================
+   Design Section
+========================= */
+
+.design-cont {
+  position: relative;
+  width: 100%;
+  padding: 60px 35px;
+}
+
+.design-card {
+  height: 100vh;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  display: flex;
+  background: white;
+  padding: 40px 0;
+}
+
+.design-card:nth-child(1) {
+  z-index: 1;
+}
+.design-card:nth-child(2) {
+  z-index: 2;
+}
+.design-card:nth-child(3) {
+  z-index: 3;
+}
+.design-card:nth-child(4) {
+  z-index: 4;
+}
+.design-card:nth-child(5) {
+  z-index: 5;
+}
+
+.design-left {
+  display: flex;
+  align-items: flex-start;
+  width: 40%;
+}
+
+.design-left p {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.design-right {
+  width: 60%;
+}
+
+.design-right h2 {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.design-right > p {
+  font-size: 1.1rem;
+  margin: 20px 0;
+}
+
+/* Deliverables */
+
+.deliver {
+  margin-top: 20px;
+}
+.deliver > p,
+.key {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #908f8d;
+}
+.key {
+  font-weight: 500 !important;
+}
+.deliver span {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.deliver span p {
+  padding: 10px 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.process-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+}
+.process-img img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+/* ==========================
+   Web Design Awards Section
+========================== */
+
+.web-awards-wrapper {
+  min-height: auto;
+}
+
+.web-awards-section {
+  height: 100vh;
+  padding: 80px 35px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.web-awards-section .heading .multi-use-p {
+  margin-top: 200px;
+}
+
+.web-awards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.web-award-card {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.web-award-card .p10-logo {
+  width: 180px;
+  height: 50px;
+  object-fit: contain;
+  object-position: left;
+}
+
+.web-award-card .desc {
+  margin-top: 35px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+  max-width: 250px;
+}
+
+.web-award-special h2 {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.web-award-card .border-btn {
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+}
+
+.web-award-card .border-btn p {
+  font-size: 12px !important;
+}
+
+/* ==========================
+   Related Services
+========================== */
+
+.web-related-services {
+  padding: 250px 35px 60px;
+  background: #fff;
+}
+
+.web-services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.web-service-card {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.web-service-card .upper h2 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.web-service-card .upper p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+  max-width: 280px;
+}
+
+.web-service-card .border-btn {
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+}
+
+.web-service-card .border-btn p {
+  font-size: 12px !important;
+}
+
+/* faq seciton  */
+
+.faq-section {
+  width: 100%;
+  background: white;
+  padding: 80px 35px;
+}
+
+.faq-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.faq-number {
+  font-size: 12px;
+  min-width: 50px;
+  font-weight: 600;
+  color: #666;
+}
+
+.faq-ques {
+  width: 55%;
+}
+
+.faq-ques h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #363535;
+}
+
+.faq-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  min-width: 80px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.5s ease;
+}
+.faq-answer p {
+  margin-top: 20px;
+  max-width: 100%;
+  line-height: 1.7;
+}
+
+.more {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.less {
+  display: none;
+  align-items: center;
+  gap: 8px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.faq-item.active .more {
+  display: none;
+}
+
+.faq-item.active .less {
+  display: flex;
+}
+.mob-design-cont {
+  display: none;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+  .design-card {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .design-left,
+  .design-right {
+    width: 100%;
+  }
+
+  .design-right h2 {
+    font-size: 2rem;
+  }
+
+  .design-right > p {
+    font-size: 1rem;
+  }
+  .web-awards-grid,
+  .web-services-container {
+    grid-template-columns: 1fr !important;
+  }
+  .mob-page5 {
+    padding-bottom: 0 !important;
+  }
+}
+@media (max-width: 992px) {
+  .industry-container {
+    grid-template-columns: 1fr;
+  }
+  .web-awards-section .heading .multi-use-p {
+    margin-top: 0;
+  }
+  .web-awards-grid,
+  .web-services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .web-service-card {
+    min-height: 300px;
+  }
+  .web-awards-section {
+    height: auto;
+    padding: 0 35px;
+    justify-content: flex-start;
+  }
+
+  .web-related-services {
+    padding: 60px 35px 60px;
+    background: #fff;
+  }
+
+  .web-service-card .upper h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .design-cont {
+    display: none;
+  }
+  .space-page {
+    margin-top: 50px !important;
+  }
+  .mob-design-cont,
+  .mob-design-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+  }
+  .mob-design-cont {
+    display: block;
+  }
+  .mob-design-card h2 {
+    padding: 15px 0;
+  }
+}

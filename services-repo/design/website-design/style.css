@@ -1,0 +1,17 @@
+/* website redesign */
+
+.web-tech-card i {
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+.web-tech-card h2 {
+  font-weight: 550;
+  padding: 40px 0 10px 0;
+}
+
+.web-tech-card p {
+  color: #8a8989;
+}
+.web-tech-card h1 {
+  font-weight: bold;
+}

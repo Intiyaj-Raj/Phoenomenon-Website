@@ -369,6 +369,12 @@ contact us section
 */
 
 @media (max-width: 750px) {
+  .special h2 {
+    font-size: 40px !important;
+  }
+  .p5-right-heading h1 {
+    font-size: 25px;
+  }
   .contact-btn .btn {
     padding: 15px 35px;
     font-size: 11px;
@@ -397,6 +403,7 @@ contact us section
     display: none;
   }
   /* page 6 */
+
   .page6-btn button {
     font-size: 11px;
     padding: 14px 8px;

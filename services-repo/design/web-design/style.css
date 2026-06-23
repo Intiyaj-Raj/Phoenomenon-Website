@@ -485,3 +485,9 @@
     width: 100%;
   }
 }
+
+@media (max-width: 750px) {
+  .web-award-special h2 {
+    font-size: 40px;
+  }
+}

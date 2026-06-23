@@ -113,7 +113,7 @@ window.addEventListener("scroll", () => {
     const target = item.getAttribute("href").replace("#", "");
 
     if (target === currentSection) {
-      item.classList.add("active");
+      item.classList.add("atcive");
     }
   });
 });

@@ -173,7 +173,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 60px 0;
+  padding: 60px 35px;
 }
 .process-img img {
   width: 300px;
@@ -385,6 +385,13 @@
 /* responsive */
 
 @media (max-width: 768px) {
+  .process-img img {
+    width: 200px;
+    height: 200px;
+  }
+  .process-img h1 {
+    font-size: 30px;
+  }
   .design-card {
     flex-direction: column;
     gap: 30px;
@@ -411,6 +418,16 @@
   }
 }
 @media (max-width: 992px) {
+  .process-img {
+    padding: 20px 35px;
+  }
+  .process-img img {
+    width: 250px;
+    height: 250px;
+  }
+  .process-img h1 {
+    font-size: 35px;
+  }
   .industry-container {
     grid-template-columns: 1fr;
   }

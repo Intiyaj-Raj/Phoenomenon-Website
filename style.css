@@ -107,7 +107,7 @@ a {
 .contact-btn {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   padding: 20px 0;
 }
 
@@ -174,7 +174,6 @@ a {
 .contact-btn .btn:hover::after {
   right: auto;
   left: 25px;
-  /* filter: brightness(0) invert(1); */
 }
 .contact-btn .btn:nth-child(1) {
   background-color: #ff7a00;

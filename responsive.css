@@ -375,13 +375,17 @@ contact us section
   .p5-right-heading h1 {
     font-size: 25px;
   }
-  .contact-btn .btn {
-    padding: 15px 35px;
-    font-size: 11px;
-  }
   .contact-btn .btn::after {
     width: 12px;
     height: 12px;
+  }
+  .contact-btn {
+    width: 100%;
+  }
+
+  .contact-btn .btn {
+    width: 100%;
+    font-size: 12px;
   }
 
   .multi-use-heading {
@@ -452,6 +456,15 @@ contact us section
   .contact-right {
     width: 100%;
     flex-direction: column;
+  }
+
+  .terms-btn {
+    gap: 0;
+    flex-direction: column;
+  }
+  .terms-btn p {
+    margin-top: 0;
+    line-height: 1.4;
   }
   /* page 8 */
   .p8-card:nth-child(1),
@@ -540,5 +553,12 @@ contact us section
   }
   .p5-btn {
     display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-btn {
+    width: 100%;
+    flex-direction: column;
   }
 }

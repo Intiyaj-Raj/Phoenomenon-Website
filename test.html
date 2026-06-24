@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <style>
+      .framework-section {
+        display: none;
+      }
+
+      .framework-section.active {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      /* Each Section */
+      .frontend-cont,
+      .backend-cont,
+      .cms-cont,
+      .server-cont,
+      .library-cont {
+        display: contents;
+      }
+
+      /* Cards */
+      .framework-card {
+        min-height: 300px;
+        padding: 35px;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        background: #f8f8f8;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        transition: 0.3s ease;
+      }
+
+      .framework-card:hover {
+        background: #fff;
+      }
+
+      .framework-card i {
+        font-size: 42px;
+        color: #000;
+      }
+
+      .framework-card p {
+        font-size: 24px;
+        font-weight: 500;
+        color: #000;
+      }
+
+      @media (max-width: 992px) {
+        .framework-section.active {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 576px) {
+        .framework-section.active {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page6">
+      <div class="heading">
+        <p class="multi-use-p">Technology stack</p>
+        <h1 class="multi-use-heading fade-text">
+          Frameworks & <br />
+          technologies we use
+        </h1>
+      </div>
+
+      <div class="page6-btn">
+        <button class="frame-btn active" data-target="frontend">
+          Frontend
+        </button>
+
+        <button class="frame-btn" data-target="backend">Backend</button>
+
+        <button class="frame-btn" data-target="cms">CMS</button>
+
+        <button class="frame-btn" data-target="server">Server</button>
+        <button class="frame-btn" data-target="premade-library">
+          Pre-made libraries
+        </button>
+      </div>
+
+      <div class="framework-cotnainer">
+        <!-- frontend -->
+        <div class="framework-section active" id="frontend">
+          <div class="framework-card">
+            <i class="fa-brands fa-react"></i>
+            <p>React</p>
+          </div>
+          <div class="framework-card">
+            <i class="fa-brands fa-node-js"></i>
+            <p>Next.js</p>
+          </div>
+          <div class="framework-card">
+            <i class="fa-solid fa-cube"></i>
+            <p>Solid.js</p>
+          </div>
+          <div class="framework-card">
+            <i class="fa-solid fa-font"></i>
+            <p>Astro</p>
+          </div>
+          <div class="framework-card">
+            <i class="fa-brands fa-angular"></i>
+            <p>Angular</p>
+          </div>
+        </div>
+
+        <div class="framework-section" id="backend"></div>
+
+        <div class="framework-section" id="cms"></div>
+
+        <div class="framework-section" id="server"></div>
+
+        <div class="framework-section" id="premade-library"></div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- gsap scroll trigger link -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./script.js"></script>
+    <script>
+      const frame_btn = document.querySelectorAll(".frame-btn");
+      const frame_section = document.querySelectorAll(".framework-section");
+
+      frame_btn.forEach((button) => {
+        button.addEventListener("click", () => {
+          const target = button.dataset.target;
+
+          frame_section.forEach((section) => {
+            section.classList.remove("active");
+          });
+
+          frame_btn.forEach((btn) => {
+            btn.classList.remove("active");
+          });
+
+          document.getElementById(target).classList.add("active");
+          button.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

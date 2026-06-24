@@ -1,0 +1,61 @@
+.framework-section {
+  display: none;
+}
+
+.framework-section.active {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Each Section */
+.frontend-cont,
+.backend-cont,
+.cms-cont,
+.server-cont,
+.library-cont {
+  display: contents;
+}
+
+/* Cards */
+.framework-card {
+  min-height: 300px;
+  padding: 35px;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s ease;
+}
+
+.framework-card:hover {
+  background: #fff;
+}
+
+.framework-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.framework-card p {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+}
+
+@media (max-width: 992px) {
+  .framework-section.active {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .framework-card p {
+    font-size: 20px;
+  }
+  .framework-section.active {
+    grid-template-columns: 1fr;
+  }
+}

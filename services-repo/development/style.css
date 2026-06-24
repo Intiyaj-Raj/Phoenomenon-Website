@@ -45,9 +45,136 @@
   color: #000;
 }
 
+/* ai development */
+.development {
+  width: 100%;
+  height: auto;
+  padding: 50px 35px;
+}
+.development-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.development-left {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+  width: 30%;
+}
+
+.development-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.dev-menu-item {
+  text-decoration: none;
+  color: #666;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.dev-menu-item:hover,
+.dev-active {
+  color: black;
+}
+
+.btn a:hover {
+  transform: translateY(-3px);
+}
+
+.development-right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.development-right-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.development-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.development-card {
+  padding: 30px;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.development-card:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.development-card h2 {
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.development-card p {
+  font-size: 16px;
+  color: #666;
+}
+.dev-space-page {
+  height: 100vh;
+  width: 100%;
+}
+
 @media (max-width: 992px) {
-  .framework-section.active {
+  s .framework-section.active {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .dev-heading h1 {
+    display: block !important;
+    font-size: 25px !important;
+  }
+  .development-container {
+    flex-direction: column;
+  }
+
+  .development-left {
+    position: static;
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .development-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .dev-menu-item {
+    font-size: 22px;
+  }
+
+  .dev-btn {
+    display: none;
+  }
+  .development-right {
+    width: 100%;
+  }
+  .development-cards {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    width: 100%;
+  }
+  .development-card {
+    padding: 30px 0;
+    padding-left: 0;
+  }
+  .mob-hide-space {
+    display: none;
   }
 }
 

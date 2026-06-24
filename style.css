@@ -230,6 +230,7 @@ a {
 
 .design-img img {
   width: 25%;
+  height: 100px;
   object-fit: cover;
   margin-top: 40px;
   object-position: center;
@@ -240,7 +241,7 @@ a {
   align-items: center;
   justify-content: center;
   width: 25%;
-  height: 100%;
+  height: 100px;
   padding-top: 50px;
 }
 .studio-num {

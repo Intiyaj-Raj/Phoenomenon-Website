@@ -21,8 +21,6 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   background-color: #080d10;
-  /* padding-top: 100px;
-  padding-bottom: 100px; */
   padding-top: 180px;
   border-bottom-left-radius: 90px;
   border-bottom-right-radius: 90px;

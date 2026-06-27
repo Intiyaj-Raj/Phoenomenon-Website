@@ -6,9 +6,6 @@ gsap.registerPlugin(ScrollTrigger);
 =========================================
  */
 document.querySelectorAll(".fade-text").forEach((heading) => {
-  const text = heading.innerHTML;
-
-  // const words = text.replace(/<br\s*\/?>/gi, " <br> ").split(" ");
   const words = heading.innerHTML
     .replace(/<br\s*\/?>/gi, "<br>")
     .split(/(\<br\>|\s+)/)
@@ -53,7 +50,6 @@ document.querySelectorAll(".fade-text").forEach((heading) => {
 =========================================
  */
 if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger);
 
   const cards = gsap.utils.toArray(".p3-card");
 
@@ -72,7 +68,7 @@ if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
       },
     });
 
-    // previous card opacity ko hatao + size chhota hota rahe
+
     gsap.to(cards[index - 1], {
       opacity: 0,
       scale: 0.92,
@@ -93,31 +89,35 @@ if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
             page 4
 =========================================
  */
-const sections = document.querySelectorAll(".p4-right");
 const menuItems = document.querySelectorAll(".menu-item");
+const sections = document.querySelectorAll(".p4-right");
 
-window.addEventListener("scroll", () => {
-  let currentSection = "";
+const menuObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        menuItems.forEach((item) => {
+          item.classList.remove("active");
+        });
 
-  sections.forEach((section) => {
-    const rect = section.getBoundingClientRect();
+        const activeItem = document.querySelector(
+          `.menu-item[href="#${entry.target.id}"]`
+        );
 
-    if (rect.top <= 200 && rect.bottom >= 200) {
-      currentSection = section.id;
-    }
-  });
+        if (activeItem) {
+          activeItem.classList.add("active");
+        }
+      }
+    });
+  },
+  {
+    threshold: 0.4,
+  }
+);
 
-  menuItems.forEach((item) => {
-    item.classList.remove("active");
-
-    const target = item.getAttribute("href").replace("#", "");
-
-    if (target === currentSection) {
-      item.classList.add("atcive");
-    }
-  });
+sections.forEach((section) => {
+  menuObserver.observe(section);
 });
-
 /* =========================
    page 5 scroll card (GSAP)
 ========================= */
@@ -139,7 +139,6 @@ if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
       },
     });
 
-    // previous card opacity ko hatao + size chhota hota rahe
     gsap.to(page5Cards[index - 1], {
       opacity: 0,
       scale: 0.92,

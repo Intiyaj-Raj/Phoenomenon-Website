@@ -1,0 +1,138 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.main-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.main-details{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(225, 220, 220);
+    padding: 20px 15px;
+    gap: 25px;
+}
+
+.main-sub-head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* margin-top: 20px; */
+    justify-content: space-between;
+}
+
+.section-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+}
+
+.section-content.collapsed {
+    display: none;
+}
+
+.main-details-p{
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 300;
+    align-self: flex-start;
+}
+
+ul{
+    padding-left: 45px;
+    margin-top: -20px;
+}
+
+li{
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h4{
+    align-self: flex-start;
+    /* margin-left: 20px; */
+    font-weight: 600;
+    margin-bottom: -15px;
+}
+
+b{
+    align-self: flex-start;
+}
+
+.dropdown-container {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            justify-content: flex-start;
+            padding-top: 20px;
+        }
+        .dropdown-container select {
+            padding: 10px 16px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            background-color: #fff;
+            font-size: 14px;
+            font-family: inherit;
+            cursor: pointer;
+            outline: none;
+            min-width: 180px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            transition: border-color 0.2s;
+        }
+        .dropdown-container select:focus {
+            border-color: #a0aec0;
+        }
+        
+        /* Hiding Google's default top-bar and layout breaking elements */
+        #google_translate_element {
+            display: none !important;
+        }
+        body {
+            top: 0px !important;
+        }
+        .goog-te-banner-frame {
+            display: none !important;
+        }
+        .skiptranslate {
+            display: none !important;
+        }
+
+
+
+
+
+
+        .cookies{
+            border: none;
+        }
+
+        .last-updated{
+            align-self: flex-end;
+        }

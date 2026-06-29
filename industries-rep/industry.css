@@ -1,0 +1,163 @@
+.industry-heading-desc {
+  color: #a4a6a7 !important;
+  padding-top: 40px !important;
+  line-height: 1.5 !important;
+}
+
+.industry-specific {
+  background: white;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  padding: 35px;
+}
+
+.industry-specific-wrapper {
+  min-height: 100vh;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.industry-specific-left {
+  width: 35%;
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+.industry-specific-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 80px;
+}
+
+.industry-specific-menu a {
+  text-decoration: none;
+  color: #818080;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.industry-specific-menu a.active {
+  color: black;
+  font-weight: 700;
+}
+.industry-specific-menu a:hover {
+  color: black;
+}
+.industry-specific-right {
+  width: 45%;
+  height: 100%;
+}
+
+.industry-specific-right-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 0;
+}
+.industry-specific-right-card p {
+  font-size: 22px;
+}
+.industry-specific-right-card img {
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+.consultation-img {
+  width: 210px !important;
+  height: 190px !important;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.saas-feature .heading {
+  padding: 35px;
+}
+.saas-feature .heading p {
+  color: #818080;
+  margin-top: 30px;
+  line-height: 1.5;
+}
+.box-text p:nth-child(1) {
+  color: #000 !important;
+}
+.box-text p:nth-child(2) {
+  color: #000 !important;
+  font-weight: 300 !important;
+}
+
+.box-icon img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 20px;
+}
+.box-icon img {
+  object-fit: contain;
+}
+
+.process-img p {
+  padding: 15px 0;
+  text-align: center;
+  font-size: 18px;
+  color: #908e8e;
+}
+
+/* ===========================================================================
+                    responsive 
+=============================================================================
+*/
+@media (max-width: 992px) {
+  .industry-specific-menu a:hover {
+    border-bottom: 1px solid black;
+  }
+  .page6 {
+    margin-top: 50px !important;
+  }
+  .mob-p3 {
+    padding-bottom: 0 !important;
+  }
+  .industry-specific-wrapper {
+    flex-direction: column;
+  }
+
+  .industry-specific-left {
+    width: 100%;
+    position: static;
+    top: 0;
+    height: fit-content;
+  }
+
+  .industry-specific-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 10px;
+  }
+
+  .industry-specific-right {
+    width: 100%;
+    height: 100%;
+  }
+
+  .industry-specific-right-card {
+    padding: 30px 0;
+  }
+  .industry-specific-right-card p {
+    font-size: 18px;
+  }
+  .industry-menu-btn {
+    display: none;
+  }
+  .saas-feature .heading p {
+    margin-top: 0;
+  }
+}

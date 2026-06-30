@@ -33,7 +33,7 @@ playPauseBtn.addEventListener('click', () => {
 
 audio.addEventListener('timeupdate', () => {
   seekSlider.value = Math.floor(audio.currentTime);
-  
+
   const remainingTime = audio.duration - audio.currentTime;
   if (!isNaN(remainingTime)) {
     timeRemainingDisplay.textContent = formatTime(remainingTime);
@@ -67,10 +67,10 @@ window.addEventListener('scroll', () => {
 
   const rect = section.getBoundingClientRect();
   const sectionHeight = rect.height;
-  
+
   // Jab section screen me enter karega tabhi animation shuru hogi
   if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-    
+
     // Calculate progress (0 se 1 ke beech me)
     let totalScrollable = sectionHeight - window.innerHeight;
     let currentScroll = Math.abs(rect.top);
@@ -183,30 +183,33 @@ document.addEventListener('mouseout', (e) => {
 // awards-hover-part
 const awardWrappers = document.querySelectorAll(".award-wrapper");
 
-  awardWrappers.forEach(wrapper => {
-    const items = wrapper.querySelectorAll(".award-item");
-    const image = wrapper.querySelector(".award-img-element");
+awardWrappers.forEach(wrapper => {
+  const items = wrapper.querySelectorAll(".award-item");
+  const image = wrapper.querySelector(".award-img-element");
 
-    items.forEach(item => {
-      item.addEventListener("mouseenter", () => {
-        wrapper.querySelector(".award-item.active")?.classList.remove("active");
-
-        item.classList.add("active");
-
-        image.style.opacity = 0;
-
-        setTimeout(() => {
-          image.src = item.dataset.img;
-          image.classList.add("show");
-          image.style.opacity = 1;
-        }, 150);
-      });
-    });
-
-    wrapper.addEventListener("mouseleave", () => {
+  items.forEach(item => {
+    item.addEventListener("mouseenter", () => {
       wrapper.querySelector(".award-item.active")?.classList.remove("active");
-      image.classList.remove("show");
+
+      item.classList.add("active");
+
       image.style.opacity = 0;
-      setTimeout(() => { image.src = ""; }, 300); 
+
+      setTimeout(() => {
+        image.src = item.dataset.img;
+        image.classList.add("show");
+        image.style.opacity = 1;
+      }, 50);
     });
   });
+
+  wrapper.addEventListener("mouseleave", () => {
+    wrapper.querySelector(".award-item.active")?.classList.remove("active");
+
+    image.classList.remove("show");
+
+    setTimeout(() => {
+      image.removeAttribute("src");
+    }, 50);
+  });
+});

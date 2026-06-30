@@ -102,12 +102,7 @@ a {
   line-height: 1.2;
   margin-bottom: 50px;
 }
-/* .services-learn-more-text{
-    font-size: 16px;
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #908f8d;
-} */
+
 .mob-heading {
   display: none;
 }
@@ -117,7 +112,6 @@ a {
   flex-wrap: wrap;
   padding: 20px 0;
   padding-top: 0;
-  /* margin-top: -40px; */
 }
 
 .contact-btn .btn {
@@ -170,7 +164,7 @@ a {
   position: absolute;
   width: 16px;
   height: 16px;
-  background-image: url("images/arrow-right-dark.svg");
+  background-image: url("../images/arrow-right-dark.svg");
   background-size: contain;
   background-repeat: no-repeat;
   top: 50%;
@@ -287,12 +281,7 @@ footer {
   /* margin-top: 10vh; */
   padding: 80px 35px;
 }
-/* .space-text,
-.sticky-footer {
-  position: sticky;
-  top: 100px;
-  left: 0;
-} */
+
 /*========================
             page 2
  ========================== */
@@ -464,7 +453,7 @@ footer {
   padding: 20px 35px;
 }
 
-.explore-btn{
+.explore-btn {
   overflow: hidden;
   padding: 18px 35px;
   border-radius: 8px;
@@ -690,12 +679,12 @@ footer {
   align-items: center;
 }
 
-.p4-right-box .box-btn{
+.p4-right-box .box-btn {
   display: none;
 }
 
 .p4-right-box:hover .box-btn {
-  display: block; 
+  display: block;
 }
 
 .box-btn img {
@@ -727,7 +716,11 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(130.34% 70.32% at 65.83% 9.16%, rgba(255, 255, 255, 0) 0, #fff 88.94%);
+  background: radial-gradient(
+    130.34% 70.32% at 65.83% 9.16%,
+    rgba(255, 255, 255, 0) 0,
+    #fff 88.94%
+  );
 }
 
 .p4-right-box:hover .box-video,
@@ -1429,41 +1422,94 @@ contact us section
   padding: 10vw 0 2vw !important;
   min-height: 100vh !important;
   background-color: #080d10;
-  border-radius:5vw;
+  border-radius: 5vw;
   clip-path: polygon(
-  /* top clip path*/
-  0 0, 
-  calc(50% - 93px) 0.74px, calc(50% - 86px) 1.48px, calc(50% - 81px) 2.96px, calc(50% - 75px) 5.92px, 
-  calc(50% - 68px) 10.36px, calc(50% - 63.5px) 14.06px, calc(50% - 58px) 19.24px, calc(50% - 53px) 24.42px, 
-  calc(50% - 48px) 30.34px, calc(50% - 44px) 35.52px, calc(50% - 40px) 42.18px, calc(50% - 36px) 48.84px, 
-  calc(50% - 33px) 55.5px, calc(50% - 31px) 61.42px, calc(50% - 29px) 67.34px, calc(50% - 27px) 74px, 
-  calc(50% - 22px) 74px, calc(50% - 28px) 39.96px, calc(50% - 29px) 28.12px, calc(50% - 30px) 0, 
-  calc(50% + 30px) 0, calc(50% + 29px) 28.12px, calc(50% + 28px) 39.96px, calc(50% + 22px) 74px, 
-  calc(50% + 27px) 74px, calc(50% + 29px) 67.34px, calc(50% + 31px) 61.42px, calc(50% + 33px) 55.5px, 
-  calc(50% + 36px) 48.84px, calc(50% + 40px) 42.18px, calc(50% + 44px) 35.52px, calc(50% + 48px) 30.34px, 
-  calc(50% + 53px) 24.42px, calc(50% + 58px) 19.24px, calc(50% + 63.5px) 14.06px, calc(50% + 68px) 10.36px, 
-  calc(50% + 75px) 5.92px, calc(50% + 81px) 2.96px, calc(50% + 86px) 1.48px, calc(50% + 93px) 0.74px, 
-  100% 0, 
+    /* top clip path*/ 0 0,
+    calc(50% - 93px) 0.74px,
+    calc(50% - 86px) 1.48px,
+    calc(50% - 81px) 2.96px,
+    calc(50% - 75px) 5.92px,
+    calc(50% - 68px) 10.36px,
+    calc(50% - 63.5px) 14.06px,
+    calc(50% - 58px) 19.24px,
+    calc(50% - 53px) 24.42px,
+    calc(50% - 48px) 30.34px,
+    calc(50% - 44px) 35.52px,
+    calc(50% - 40px) 42.18px,
+    calc(50% - 36px) 48.84px,
+    calc(50% - 33px) 55.5px,
+    calc(50% - 31px) 61.42px,
+    calc(50% - 29px) 67.34px,
+    calc(50% - 27px) 74px,
+    calc(50% - 22px) 74px,
+    calc(50% - 28px) 39.96px,
+    calc(50% - 29px) 28.12px,
+    calc(50% - 30px) 0,
+    calc(50% + 30px) 0,
+    calc(50% + 29px) 28.12px,
+    calc(50% + 28px) 39.96px,
+    calc(50% + 22px) 74px,
+    calc(50% + 27px) 74px,
+    calc(50% + 29px) 67.34px,
+    calc(50% + 31px) 61.42px,
+    calc(50% + 33px) 55.5px,
+    calc(50% + 36px) 48.84px,
+    calc(50% + 40px) 42.18px,
+    calc(50% + 44px) 35.52px,
+    calc(50% + 48px) 30.34px,
+    calc(50% + 53px) 24.42px,
+    calc(50% + 58px) 19.24px,
+    calc(50% + 63.5px) 14.06px,
+    calc(50% + 68px) 10.36px,
+    calc(50% + 75px) 5.92px,
+    calc(50% + 81px) 2.96px,
+    calc(50% + 86px) 1.48px,
+    calc(50% + 93px) 0.74px,
+    100% 0,
 
-  /* --- BOTTOM  clip path--- */
-  100% 100%, 
-  calc(50% + 93px) calc(100% - 0.74px), calc(50% + 86px) calc(100% - 1.48px), calc(50% + 81px) calc(100% - 2.96px), 
-  calc(50% + 75px) calc(100% - 5.92px), calc(50% + 68px) calc(100% - 10.36px), calc(50% + 63.5px) calc(100% - 14.06px), 
-  calc(50% + 58px) calc(100% - 19.24px), calc(50% + 53px) calc(100% - 24.42px), calc(50% + 48px) calc(100% - 30.34px), 
-  calc(50% + 44px) calc(100% - 35.52px), calc(50% + 40px) calc(100% - 42.18px), calc(50% + 36px) calc(100% - 48.84px), 
-  calc(50% + 33px) calc(100% - 55.5px), calc(50% + 31px) calc(100% - 61.42px), calc(50% + 29px) calc(100% - 67.34px), 
-  calc(50% + 27px) calc(100% - 74px), calc(50% + 22px) calc(100% - 74px), calc(50% + 28px) calc(100% - 39.96px), 
-  calc(50% + 29px) calc(100% - 28.12px), calc(50% + 30px) 100%, 
-  calc(50% - 30px) 100%, 
-  calc(50% - 29px) calc(100% - 28.12px), calc(50% - 28px) calc(100% - 39.96px), calc(50% - 22px) calc(100% - 74px), 
-  calc(50% - 27px) calc(100% - 74px), calc(50% - 29px) calc(100% - 67.34px), calc(50% - 31px) calc(100% - 61.42px), 
-  calc(50% - 33px) calc(100% - 55.5px), calc(50% - 36px) calc(100% - 48.84px), calc(50% - 40px) calc(100% - 42.18px), 
-  calc(50% - 44px) calc(100% - 35.52px), calc(50% - 48px) calc(100% - 30.34px), calc(50% - 53px) calc(100% - 24.42px), 
-  calc(50% - 58px) calc(100% - 19.24px), calc(50% - 63.5px) calc(100% - 14.06px), calc(50% - 68px) calc(100% - 10.36px), 
-  calc(50% - 75px) calc(100% - 5.92px), calc(50% - 81px) calc(100% - 2.96px), calc(50% - 86px) calc(100% - 1.48px), 
-  calc(50% - 93px) calc(100% - 0.74px), 
-  0 100%
-);
+    /* --- BOTTOM  clip path--- */ 100% 100%,
+    calc(50% + 93px) calc(100% - 0.74px),
+    calc(50% + 86px) calc(100% - 1.48px),
+    calc(50% + 81px) calc(100% - 2.96px),
+    calc(50% + 75px) calc(100% - 5.92px),
+    calc(50% + 68px) calc(100% - 10.36px),
+    calc(50% + 63.5px) calc(100% - 14.06px),
+    calc(50% + 58px) calc(100% - 19.24px),
+    calc(50% + 53px) calc(100% - 24.42px),
+    calc(50% + 48px) calc(100% - 30.34px),
+    calc(50% + 44px) calc(100% - 35.52px),
+    calc(50% + 40px) calc(100% - 42.18px),
+    calc(50% + 36px) calc(100% - 48.84px),
+    calc(50% + 33px) calc(100% - 55.5px),
+    calc(50% + 31px) calc(100% - 61.42px),
+    calc(50% + 29px) calc(100% - 67.34px),
+    calc(50% + 27px) calc(100% - 74px),
+    calc(50% + 22px) calc(100% - 74px),
+    calc(50% + 28px) calc(100% - 39.96px),
+    calc(50% + 29px) calc(100% - 28.12px),
+    calc(50% + 30px) 100%,
+    calc(50% - 30px) 100%,
+    calc(50% - 29px) calc(100% - 28.12px),
+    calc(50% - 28px) calc(100% - 39.96px),
+    calc(50% - 22px) calc(100% - 74px),
+    calc(50% - 27px) calc(100% - 74px),
+    calc(50% - 29px) calc(100% - 67.34px),
+    calc(50% - 31px) calc(100% - 61.42px),
+    calc(50% - 33px) calc(100% - 55.5px),
+    calc(50% - 36px) calc(100% - 48.84px),
+    calc(50% - 40px) calc(100% - 42.18px),
+    calc(50% - 44px) calc(100% - 35.52px),
+    calc(50% - 48px) calc(100% - 30.34px),
+    calc(50% - 53px) calc(100% - 24.42px),
+    calc(50% - 58px) calc(100% - 19.24px),
+    calc(50% - 63.5px) calc(100% - 14.06px),
+    calc(50% - 68px) calc(100% - 10.36px),
+    calc(50% - 75px) calc(100% - 5.92px),
+    calc(50% - 81px) calc(100% - 2.96px),
+    calc(50% - 86px) calc(100% - 1.48px),
+    calc(50% - 93px) calc(100% - 0.74px),
+    0 100%
+  );
   padding: 20px 35px;
   color: white;
 }
@@ -1511,7 +1557,7 @@ contact us section
   text-transform: uppercase;
   color: white;
 }
-.submit-btn{
+.submit-btn {
   margin-top: 100px;
 }
 .attach-btn {

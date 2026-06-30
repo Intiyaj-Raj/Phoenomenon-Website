@@ -1,0 +1,1303 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About us - Phenomenon</title>
+  <!-- faviocn -->
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+  <!-- css link  -->
+  <!-- <link rel="stylesheet" href="../style.css" /> -->
+  <link rel="stylesheet" href="../responsive.css" />
+  <link rel="stylesheet" href="../footer-page.css" />
+  <link rel="stylesheet" href="./about-us.css">
+  <link rel="stylesheet" href="../services-repo/design/web-design/style.css">
+  <link rel="stylesheet" href="../services-repo/launch/product-discovery/product-discovery.css">
+  <style>
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+  </style>
+  <!-- font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+    rel="stylesheet" />
+  <!-- fas fas icon cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- GSAP and ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+  <!-- main -->
+  <div id="navbar-container" style="z-index: 9999"></div>
+
+  <div id="main">
+    <!-- hero -->
+    <div id="hero">
+      <div class="heading">
+        <p class="multi-use-p">Product Design and Development Agency</p>
+        <h1 class="multi-use-heading fade-text">
+          From a four-person startup studio <br> to a 70+ talent team designing <br> across industries and continents
+        </h1>
+      </div>
+      <div class="contact-btn">
+        <div class="btn">
+          <a href="#contact">Let’s talk</a>
+        </div>
+
+        <div class="btn">
+          <a href="./cases.html">View our cases</a>
+        </div>
+      </div>
+
+      <div id="hero-bottom">
+        <div class="hero-text">
+
+          <p class="multi-use-p" style="margin-top: 60px">
+            OUR PRODUCT DESIGN AGENCY IN NUMBERS
+          </p>
+          <div class="studio-num">
+            <div class="studio-card">
+              <span>98%</span>
+              <span>customer satisfaction rate</span>
+            </div>
+            <div class="studio-card">
+              <span>35%+</span>
+              <span>boost in conversions after redesign</span>
+            </div>
+            <div class="studio-card">
+              <span>70+</span>
+              <span>top-tier designers and developers on board</span>
+            </div>
+            <div class="studio-card">
+              <span>92%</span>
+              <span>of clients return for additional work</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- sapce page  -->
+  <div class="space-page">
+    <div class="space-text">
+      <p class="multi-use-p">WHAT GROUNDED US THEN, AND STILL DOES</p>
+      <h1 class="multi-use-heading fade-text">It wasn’t one client or one <br> breakthrough: just consistent work, <br>
+        good people, and a clear sense of <br> what matters</h1>
+    </div>
+  </div>
+
+  <div class="vf-section">
+    <div class="vf-left">
+      <p style="color: black;">
+        In the founder's words
+      </p>
+    </div>
+    <div class="vf-right">
+      <p style="color: black;" class="vf-right-text">
+        Valerii came from e-commerce and early-stage startups, driven by systems thinking
+        and user flows. Polina led cross-functional teams at design studios Ukraine and the
+        UK, refining how interfaces look, feel, and behave.
+      </p>
+      <div class="vf-card">
+        <div class="profile-details">
+          <img src="./vf-dp.webp" alt="" class="vf-dp">
+          <span>
+            <h3>Valerii Filimonov</h3>
+            <h4>co-founder</h4>
+          </span>
+        </div>
+
+        <h4 class="vf-comment">I saw that for many designers, beauty mattered more than logic. I wanted to
+          create something grounded—with people who think deeply.
+        </h4>
+
+        <div class="vf-audio">
+          <audio id="vf-audio-element" src="./Valerii-comment.mp3"></audio>
+
+          <!-- Custom Audio Player Container -->
+          <div class="audio-player-container">
+            <button type="button" id="play-pause-btn" class="play-btn">
+              <!-- Play Icon (SVG) -->
+              <svg id="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+              <!-- Pause Icon (SVG) - Hidden by default -->
+              <svg id="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+              </svg>
+            </button>
+
+            <!-- Custom Progress Bar -->
+            <input type="range" id="seek-slider" max="100" value="0">
+
+            <!-- Time Remaining -->
+            <span id="time-remaining">-00:21</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="page7">
+    <div class="page7-gallery">
+
+      <div class="team-img team1">
+        <img class="reveal-media" src="../images/page7/p71.webp" alt="Team Member" />
+      </div>
+
+      <div class="team-img team2"></div>
+
+      <div class="team-img team3">
+        <img class="reveal-media" src="../images/page7/p72.webp" alt="Team Member" />
+      </div>
+
+      <div class="team-img team4">
+        <img class="reveal-media" src="../images/page7/p75.webp" alt="Team Member" />
+      </div>
+
+      <div class="team-img team5">
+        <img class="reveal-media" src="../images/page7/p73.webp" alt="Team Member" />
+      </div>
+
+      <div class="team-img team6">
+        <img class="reveal-media" src="../images/page7/p74.webp" alt="Team Member" />
+      </div>
+    </div>
+  </div>
+
+  <div class="agency-in-numbers-section">
+    <p class="multi-use-p">OUR PRODUCT DESIGN AGENCY IN NUMBERS</p>
+    <h1 class="multi-use-heading">What we've gained together since 2019</h1>
+  </div>
+
+  <div class="agency-in-numbers-inner-part">
+    <div class="agency-numbers">
+      <span>
+        <h1>04</h1>
+        <p>team members on board</p>
+      </span>
+      <span>
+        <h1>001</h1>
+        <p>projects successfully delivered</p>
+      </span>
+      <span>
+        <h1>001</h1>
+        <p>satisfied clients</p>
+      </span>
+      <span>
+        <h1>00</h1>
+        <p>industry awards won</p>
+      </span>
+    </div>
+
+    <div class="vf-section part2">
+
+      <div class="vf-left">
+
+      </div>
+      <div class="vf-right">
+        <p style="color: black;" class="vf-right-text">
+
+          We started working with our first few startups on products they needed to bring to market quickly. Many of
+          those early clients are still with us today, as we’ve grown side by side and watched each other evolve.
+        </p>
+
+        <div class="vf-card part2-card">
+          <div class="profile-details">
+            <img src="../pictures/polina.webp" alt="" class="pc-dp">
+            <span>
+              <h3>Polina Chebanova</h3>
+              <h4>co-founder</h4>
+            </span>
+          </div>
+
+
+          <h4 class="vf-comment">
+            We never aimed to grow fast. The goal was to build something better—and people who felt the same kept
+            joining us.
+          </h4>
+
+          <div class="vf-audio">
+            <audio id="vf-audio-element" src="./pc-audio-comment.mp3"></audio>
+
+            <!-- Custom Audio Player Container -->
+            <div class="audio-player-container">
+              <button type="button" id="play-pause-btn" class="play-btn">
+                <!-- Play Icon (SVG) -->
+                <svg id="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+                <!-- Pause Icon (SVG) - Hidden by default -->
+                <svg id="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                  <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                </svg>
+              </button>
+
+              <!-- Custom Progress Bar -->
+              <input type="range" id="seek-slider" max="100" value="0">
+
+              <!-- Time Remaining -->
+              <span id="time-remaining">-00:33</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- page2 -->
+  <div id="page2">
+    <div id="p2-container">
+      <div class="p2-card">
+        <div class="p2-card-img">
+          <img class="reveal-media" src="../images/p2-img/logo1.svg" alt="" />
+        </div>
+
+        <!-- hover content -->
+        <div class="p2-hover-card">
+          <h1>Airportr</h1>
+          <p>
+            Recognized as one of the top 5 most innovative UK transport tech
+            firms by TransportTech 2023.
+          </p>
+          <span>
+            <p>Logistic</p>
+            <p><img src="../images/p2-img/UK.svg" alt="" />&nbsp;&nbsp;uk</p>
+          </span>
+        </div>
+      </div>
+      <div class="p2-card">
+        <div class="p2-card-img">
+          <img src="../images/p2-img/nomupay.svg" alt="" />
+        </div>
+
+        <!-- hover content -->
+        <div class="p2-hover-card">
+          <h1>Nomupay</h1>
+          <p>
+            Nomupay raises €35.9 million to expand unified payments access in
+            Asia market.
+          </p>
+          <span>
+            <span>
+              <p>Fintech</p>
+              <p>
+                <img src="../images/p2-img/Ireland.svg" alt="" />&nbsp;&nbsp;Ireland
+              </p>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="p2-card">
+        <div class="p2-card-img">
+          <img class="reveal-media" src="../images/p2-img/logo3.svg" alt="" />
+        </div>
+
+        <!-- hover content -->
+        <div class="p2-hover-card">
+          <h1>One Text</h1>
+          <p>
+            Y Combinator-backed SaaS startup enabling frictionless payments
+            via SMS.
+          </p>
+
+          <span>
+            <span>
+              <p>Saas</p>
+              <p>
+                <img src="../images/p2-img/USA.svg" alt="" />&nbsp;&nbsp;USA
+              </p>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="p2-card">
+        <div class="p2-card-img">
+          <img class="reveal-media" src="../images/p2-img/logo4.svg" alt="" />
+        </div>
+
+        <!-- hover content -->
+        <div class="p2-hover-card">
+          <h1>Shaga</h1>
+          <p>
+            An emerging leader in cloud gaming, successfully raised $1M in a
+            Pre-Seed funding round.
+          </p>
+
+          <span>
+            <p>Web3</p>
+            <p><img src="../images/p2-img/USA.svg" alt="" />&nbsp;&nbsp;usa</p>
+          </span>
+        </div>
+      </div>
+      <div class="p2-card">
+        <div class="p2-card-img">
+          <img class="reveal-media" src="../images/p2-img/DoStuffMedia-1.svg" alt="" />
+        </div>
+
+        <!-- hover content -->
+        <div class="p2-hover-card">
+          <h1>DoStuffMedia</h1>
+          <p>
+            A prominent entertainment platform with 2.5 million monthly
+            website visits and 23 million monthly social impressions.
+          </p>
+          <span>
+            <p>Entertainment</p>
+            <p><img src="../images/p2-img/USA.svg" alt="" />&nbsp;&nbsp;usa</p>
+          </span>
+        </div>
+      </div>
+      <div class="p2-card">
+        <div class="p2-card-img">
+          <img class="reveal-media" src="../images/p2-img/logo6.svg" alt="" />
+        </div>
+
+        <!-- hover content -->
+        <div class="p2-hover-card">
+          <h1>Isora</h1>
+          <p>
+            A collaborative GRC risk assessment platform trusted by Berkeley,
+            Yale, and other leading institutions. TechStars graduate.
+          </p>
+          <span>
+            <span>
+              <p>Saas</p>
+              <p>
+                <img src="../images/p2-img/USA.svg" alt="" />&nbsp;&nbsp;usa
+              </p>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="p2-card">
+        <div class="p2-card-img">
+          <img class="reveal-media" src="../images/p2-img/Wisdom.svg" alt="" />
+        </div>
+
+        <!-- hover content -->
+        <div class="p2-hover-card">
+          <h1>MyWisdom</h1>
+          <p>
+            After redesign, Wisdom raised $1.3M and partnered with Samsung
+            Health & Galaxy Watch for AI gait and fall-prevention insights.
+          </p>
+
+          <span>
+            <span>
+              <p>HealthTech</p>
+              <p>
+                <img src="../images/p2-img/USA.svg" alt="" />&nbsp;&nbsp;USA
+              </p>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="p2-card">
+        <div class="p2-card-img">
+          <img class="reveal-media" src="../images/p2-img/logo8.svg" alt="" />
+        </div>
+
+        <!-- hover content -->
+        <div class="p2-hover-card">
+          <h1>Qurtuba Online</h1>
+          <p>
+            Recognized as South Africa’s top-performing EdTech institution in
+            2023.
+          </p>
+
+          <span>
+            <p>EdTech</p>
+            <p>
+              <img src="../images/p2-img/South-Africa.svg" alt="" />&nbsp;&nbsp;South Africa
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="collaborating-text-about">
+    <p class="multi-use-p">Worldwide, Where You Need Us</p>
+    <h1 class="multi-use-heading">Collaborating across borders to <br> deliver seamless solutions — <br> wherever you
+      are</h1>
+
+    <p class="colla-with-text">You’ll collaborate with project leads based near your region in the USA,
+      and Switzerland, while your design & development team works across senior hubs in Europe.
+      This setup gives you the proximity and trust of a local partner with the efficiency and speed
+      of a global team.
+    </p>
+  </div>
+
+  <div class="about-us-map">
+
+    <div class="iframe-left">
+      <div class="na-s">
+        <h2>North America & Switzerland</h2>
+        <span>
+          <p>Client-facing</p>
+          <p>Strategy & discovery</p>
+          <p>Product leads</p>
+        </span>
+      </div>
+      <div class="europe">
+        <h2>Europe</h2>
+        <span>
+          <p>UX/UI design</p>
+          <p>Development</p>
+          <p>Branding & motion design</p>
+          <p>Marketing & growth</p>
+        </span>
+      </div>
+    </div>
+
+    <div class="iframe-right">
+      <img src="./about-us-map.svg" alt="">
+    </div>
+
+  </div>
+
+
+  <!-- page4 -->
+  <div id="page4">
+    <div class="heading">
+      <p class="multi-use-p">
+        WHAT MAKES US DIFFERENT
+      </p>
+      <h1 class="multi-use-heading fade-text">
+        We’ve built hundreds of products <br> by focusing on the right things. <br>Here’s what our clients value most
+      </h1>
+    </div>
+
+    <div class="industry-container">
+      <div class="industry-card">
+        <div class="industry-card-cont">
+          <div class="industry-card-card">
+            <span class="box-icon"><i class="fa-solid fa-crown"></i></span>
+            <div class="p4-box-bottom">
+              <div class="box-text">
+                <p>Partners, not vendors</p>
+                <p>
+                  We don’t disappear after a kickoff call or pass work down a chain. You’ll work directly with the team
+                  building your product: in Slack, in Figma, and in your workflow.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-card-cont">
+          <div class="industry-card-card">
+            <span class="box-icon"><i class="fa-solid fa-comments"></i></span>
+            <div class="p4-box-bottom">
+              <div class="box-text">
+                <p>Design that holds up over time</p>
+                <p>
+                  We build thoughtful, system-based interfaces, not flashy one-offs. Our work adapts to your product,
+                  keeps logic intact, and holds up to change.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-card-cont">
+          <div class="industry-card-card">
+            <span class="box-icon"><i class="fa-solid fa-code"></i></span>
+            <div class="p4-box-bottom">
+              <div class="box-text">
+                <p>Developer-ready by default</p>
+                <p>
+                  Every component is reusable, accessible, and engineered for handoff. Tokens, states, constraints—we
+                  speak dev and design like we code. That’s how we ship fast.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-card-cont">
+          <div class="industry-card-card">
+            <span class="box-icon"><i class="fa-solid fa-user-tie"></i></span>
+            <div class="p4-box-bottom">
+              <div class="box-text">
+                <p>Process you can follow</p>
+                <p>
+                  You see what we see. From day one, we make progress visible in Notion, Jira, Figma, or your stack.
+                  Scope, estimates, and feedback loops stay open and honest.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-card-cont">
+          <div class="industry-card-card">
+            <span class="box-icon"><i class="fa-solid fa-certificate"></i></span>
+            <div class="p4-box-bottom">
+              <div class="box-text">
+                <p>Product-led design thinking</p>
+                <p>
+                  We work at the intersection of design and business. From product-market fit to scale-readiness, our
+                  designers think like product managers, aligning UX with growth metrics, not just user flow.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="industry-card">
+        <div class="industry-card-cont">
+          <div class="industry-card-card">
+            <span class="box-icon"><i class="fa-solid fa-certificate"></i></span>
+            <div class="p4-box-bottom">
+              <div class="box-text">
+                <p>People who care about the work</p>
+                <p>
+                  Our edge isn’t tools or templates—it’s the people. Curious, invested, and obsessive about doing the
+                  right thing right. You’ll feel it in the work and in every interaction.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- page5  -->
+  <!-- sapce page  -->
+  <div class="space-page">
+    <div class="space-text">
+      <p class="multi-use-p">OUR TEAM</p>
+      <h1 class="multi-use-heading fade-text">
+        Meet the phenomenal people <br> behind our projects
+      </h1>
+      <p class="we-believe-text">We believe great work doesn’t come from titles; it comes from people. Ours think
+        deeply, care fiercely, and take pride in what they build. From product leads and designers to developers and
+        advisors, we work across time zones and disciplines but share the same core: curiosity, honesty, and a hands-on
+        commitment to doing things right.</p>
+    </div>
+  </div>
+
+  <div class="team-page">
+    <div class="team-page-btn">
+      <button class="industry-btn active" data-target="leadership-team">LEADERSHIP</button>
+      <button class="industry-btn" data-target="talented-team">TALENTED TEAM</button>
+    </div>
+
+    <div class="p6-wrapper">
+      <div class="p6-card" id="leadership-team">
+        <div class="team-grid" id="leadership-team-grid"></div>
+      </div>
+
+      <div class="p6-card active-content" id="talented-team">
+        <div class="team-grid" id="talented-team-grid"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="team-reviews">
+    <div class="space-text">
+      <p class="multi-use-p">THE TRAITS WE WORK BY</p>
+      <h1 class="multi-use-heading fade-text">
+        What our team said, in three words <br> each, when asked to describe <br> Phenomenon
+      </h1>
+    </div>
+  </div>
+
+  <div class="skills-grid-container">
+    <!-- Card 1 -->
+    <div class="skill-card">
+      <h3>Supportive</h3>
+      <div class="badge-group">
+        <span class="emoji-badge">😍 32</span>
+        <span class="emoji-badge">✴️ 19</span>
+        <span class="emoji-badge">🔥 14</span>
+        <span class="emoji-badge">🙌 13</span>
+        <span class="emoji-badge">👍 11</span>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="skill-card">
+      <h3>Creative</h3>
+      <div class="badge-group">
+        <span class="emoji-badge">😍 27</span>
+        <span class="emoji-badge">✴️ 23</span>
+        <span class="emoji-badge">🔥 17</span>
+        <span class="emoji-badge">🙌 18</span>
+        <span class="emoji-badge">👍 11</span>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="skill-card">
+      <h3>Curious</h3>
+      <div class="badge-group">
+        <span class="emoji-badge">😍 16</span>
+        <span class="emoji-badge">✴️ 13</span>
+        <span class="emoji-badge">🔥 11</span>
+        <span class="emoji-badge">🙌 11</span>
+        <span class="emoji-badge">👍 6</span>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="skill-card">
+      <h3>Ambitious</h3>
+      <div class="badge-group">
+        <span class="emoji-badge">😍 14</span>
+        <span class="emoji-badge">✴️ 7</span>
+        <span class="emoji-badge">🔥 7</span>
+        <span class="emoji-badge">🙌 5</span>
+        <span class="emoji-badge">👍 5</span>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="skill-card">
+      <h3>Skilled</h3>
+      <div class="badge-group">
+        <span class="emoji-badge">😍 18</span>
+        <span class="emoji-badge">✴️ 12</span>
+        <span class="emoji-badge">🔥 13</span>
+        <span class="emoji-badge">🙌 5</span>
+        <span class="emoji-badge">👍 7</span>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="skill-card">
+      <h3>Talented</h3>
+      <div class="badge-group">
+        <span class="emoji-badge">😍 20</span>
+        <span class="emoji-badge">✴️ 11</span>
+        <span class="emoji-badge">🔥 13</span>
+        <span class="emoji-badge">🙌 6</span>
+        <span class="emoji-badge">👍 6</span>
+      </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="skill-card">
+      <h3>Professional</h3>
+      <div class="badge-group">
+        <span class="emoji-badge">😍 11</span>
+        <span class="emoji-badge">✴️ 17</span>
+        <span class="emoji-badge">🔥 6</span>
+        <span class="emoji-badge">🙌 6</span>
+        <span class="emoji-badge">👍 7</span>
+      </div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="skill-card">
+      <h3>Calm</h3>
+      <div class="badge-group">
+        <span class="emoji-badge">😍 12</span>
+        <span class="emoji-badge">✴️ 11</span>
+        <span class="emoji-badge">🔥 6</span>
+        <span class="emoji-badge">🙌 8</span>
+        <span class="emoji-badge">👍 4</span>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="awards-hover">
+    <div class="awards-hover-text">
+      <p class="multi-use-p">AWARDS</p>
+      <h1 class="multi-use-heading">Wins that inspire us forward</h1>
+    </div>
+  </div>
+
+
+  <section class="awards">
+
+    <div class="award-wrapper">
+      <div class="unhover-part">
+        <h2 class="award-company">Clutch</h2>
+      </div>
+
+      <div class="hover-part">
+        <div class="award-left">
+
+          <div class="award-item" data-img="./awards-pic/clutch.webp">
+            <span>Top 1000 Company 2025</span>
+          </div>
+          <div class="award-item" data-img="./awards-pic/clutch.webp">
+            <span>Top Product Design Company 2024</span>
+          </div>
+          <div class="award-item" data-img="./awards-pic/clutch.webp">
+            <span>Top User Research Company 2024</span>
+          </div>
+          <div class="award-item" data-img="./awards-pic/clutch.webp">
+            <span>Top React Developers 2024</span>
+          </div>
+          <div class="award-item" data-img="./awards-pic/clutch.webp">
+            <span>Top Ukrainian Company 2024</span>
+          </div>
+          <div class="award-item" data-img="./awards-pic/clutch.webp">
+            <span>Top Ukrainian B2B Company 2021 - Creative & Design</span>
+          </div>
+          <div class="award-item" data-img="./awards-pic/clutch.webp">
+            <span>Top Ukrainian B2B Company 2021 - Development</span>
+          </div>
+
+        </div>
+
+        <div class="award-right">
+          <img class="award-img-element" src="" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="award-wrapper">
+      <div class="unhover-part">
+        <h2 class="award-company">UX Design Awards</h2>
+      </div>
+
+      <div class="hover-part">
+        <div class="award-left">
+          <div class="award-item" data-img="./awards-pic/50pros.webp">
+            <span>Isora GRC - Nomination 2024</span>
+          </div>
+          <div class="award-item" data-img="./awards-pic/50pros.webp">
+            <span>MyWisdom - Nomination 2026</span>
+          </div>
+        </div>
+
+        <div class="award-right">
+          <img class="award-img-element" src="" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="award-wrapper">
+      <div class="unhover-part">
+        <h2 class="award-company">Webflow</h2>
+      </div>
+
+      <div class="hover-part">
+        <div class="award-left">
+
+          <div class="award-item" data-img="./awards-pic/webflow.webp">
+            <span>Webflow 101 certification</span>
+          </div>
+          <div class="award-item" data-img="./awards-pic/webflow.webp">
+            <span>Webflow CMS certification</span>
+          </div>
+          <div class="award-item" data-img="./awards-pic/webflow.webp">
+            <span>Webflow experts certification</span>
+          </div>
+          <div class="award-item" data-img="./awards-pic/webflow.webp">
+            <span>Webflow layouts certification</span>
+          </div>
+
+        </div>
+
+        <div class="award-right">
+          <img class="award-img-element" src="" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="award-wrapper">
+      <div class="unhover-part">
+        <h2 class="award-company">Upwork</h2>
+      </div>
+
+      <div class="hover-part">
+        <div class="award-left">
+          <div class="award-item" data-img="./awards-pic/upwork.webp">
+            <span>Top Rated Agency</span>
+          </div>
+        </div>
+
+        <div class="award-right">
+          <img class="award-img-element" src="" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="award-wrapper">
+      <div class="unhover-part">
+        <h2 class="award-company">Behance</h2>
+      </div>
+
+      <div class="hover-part">
+        <div class="award-left">
+          <div class="award-item" data-img="./awards-pic/behance.webp">
+            <span>Featured in different galleries</span>
+          </div>
+        </div>
+
+        <div class="award-right">
+          <img class="award-img-element" src="" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="award-wrapper">
+      <div class="unhover-part">
+        <h2 class="award-company">DesignRush Award</h2>
+      </div>
+
+      <div class="hover-part">
+        <div class="award-left">
+          <div class="award-item" data-img="./awards-pic/design-rush-award.webp">
+            <span>Shaga Odyssey - Website Design Awards 2025</span>
+          </div>
+        </div>
+
+        <div class="award-right">
+          <img class="award-img-element" src="" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="award-wrapper">
+      <div class="unhover-part">
+        <h2 class="award-company">awwwards</h2>
+      </div>
+
+      <div class="hover-part">
+        <div class="award-left">
+
+          <div class="award-item" data-img="./awards-pic/awards.webp">
+            <span>Pretty Patty - Honorable Mention 2025</span>
+          </div>
+          <div class="award-item" data-img="./awards-pic/awards.webp">
+            <span>Paradigm - Honorable Mention 2025</span>
+          </div>
+          <div class="award-item" data-img="./awards-pic/awards.webp">
+            <span>Shaga Odessey - Site Of The Day Oct 27, 2024 </span>
+          </div>
+          <div class="award-item" data-img="./awards-pic/awards.webp">
+            <span>Shaga - Honorable Mention 2024</span>
+          </div>
+
+        </div>
+
+        <div class="award-right">
+          <img class="award-img-element" src="" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="award-wrapper">
+      <div class="unhover-part">
+        <h2 class="award-company">50Pros</h2>
+      </div>
+
+      <div class="hover-part">
+        <div class="award-left">
+          <div class="award-item" data-img="./awards-pic/50pros.webp">
+            <span>Featured in different categories</span>
+          </div>
+        </div>
+
+        <div class="award-right">
+          <img class="award-img-element" src="" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="award-wrapper">
+      <div class="unhover-part">
+        <h2 class="award-company">i.design Award</h2>
+      </div>
+
+      <div class="hover-part">
+        <div class="award-left">
+          <div class="award-item" data-img="./awards-pic/design-rush-award.webp">
+            <span>Shaga Odessey - Winner 2026</span>
+          </div>
+        </div>
+
+        <div class="award-right">
+          <img class="award-img-element" src="" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- testimonials  -->
+  <div class="page9">
+    <div class="p9-heading">
+      <div class="heading">
+        <p class="multi-use-p">what our clients say</p>
+        <h1 class="multi-use-heading fade-text">
+          5.0 is our average on clutch & designrush
+        </h1>
+      </div>
+
+      <div class="p9-heading-img">
+        <div class="p9-head-card">
+          <a href="https://clutch.co/profile/phenomenon-studio" target="_blank">
+            <img src="../images/page9/clutch-icon.svg" alt="" class="default-img" />
+            <img src="../images/page9/Icon.svg" alt="" class="hover-img" />
+
+            <div class="star-img">
+              <span>
+                <img src="../images/page9/star.svg" alt="" />
+                <img src="../images/page9/star.svg" alt="" />
+                <img src="../images/page9/star.svg" alt="" />
+                <img src="../images/page9/star.svg" alt="" />
+                <img src="../images/page9/star.svg" alt="" />
+              </span>
+              <p>5.0</p>
+            </div>
+          </a>
+        </div>
+        <div class="p9-head-card">
+          <a href="https://www.designrush.com/agency/profile/phenomenon-studio" target="_blank">
+            <img src="../images/page9/design-icon.svg" alt="" class="default-img" />
+            <img src="../images/page9/icon2.svg" alt="" class="hover-img" />
+            <div class="star-img">
+              <span>
+                <img src="../images/page9/star.svg" alt="" />
+                <img src="../images/page9/star.svg" alt="" />
+                <img src="../images/page9/star.svg" alt="" />
+                <img src="../images/page9/star.svg" alt="" />
+                <img src="../images/page9/star.svg" alt="" />
+              </span>
+              <p>4.9</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonials">
+      <!-- Card 1 -->
+      <div class="p9-card">
+        <div class="card-header">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" />
+          <div>
+            <h3>Craig Tortolani</h3>
+            <p>CPO at Dekryption Labs</p>
+          </div>
+        </div>
+
+        <div class="video-wrapper">
+          <img
+            src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg"
+            alt="" />
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="p9-card quote-card">
+        <div>
+          <div class="card-header">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" />
+            <div>
+              <h3>Ash Bryant</h3>
+              <p>Founder of Hormn</p>
+            </div>
+          </div>
+
+          <p class="quote-text">
+            The design team is truly world-class, excelling in both user
+            interface design and creating solutions optimized for conversion.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="p9-card">
+        <div class="card-header">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" />
+          <div>
+            <h3>KlickEx Team</h3>
+          </div>
+        </div>
+
+        <div class="video-wrapper">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200" alt="" />
+        </div>
+      </div>
+      <!-- Card 4-->
+      <div class="p9-card quote-card">
+        <div>
+          <div class="card-header">
+            <img src="https://randomuser.me/api/portraits/men/52.jpg" />
+            <div>
+              <h3>George Fry</h3>
+              <p>Founder at Neap</p>
+            </div>
+          </div>
+
+          <p class="quote-text">
+            The quality of the designs is fantastic. Phenomenon Studio works
+            at speed and is extremely punctual with timelines.
+          </p>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="p9-card">
+        <div class="card-header">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" />
+          <div>
+            <h3>Sarah Wilson</h3>
+            <p>Product Manager</p>
+          </div>
+        </div>
+
+        <div class="video-wrapper">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=1200" alt="" />
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="p9-card quote-card">
+        <div>
+          <div class="card-header">
+            <img src="https://randomuser.me/api/portraits/men/52.jpg" />
+            <div>
+              <h3>David Lee</h3>
+              <p>CEO of StartupX</p>
+            </div>
+          </div>
+
+          <p class="quote-text">
+            Working with this team was a fantastic experience. Their attention
+            to detail, creativity, and communication exceeded our
+            expectations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="web-related-services diving-deeper">
+    <div class="heading">
+      <p class="multi-use-p">WHAT IF YOU HIRE PHENOMENON</p>
+      <h1 class="multi-use-heading fade-text">
+        Diving deeper into what we can <br> bring to your table
+      </h1>
+      <p style="color: black;" class="curious-text">If you’re curious to see the thinking, processes, and hands-on
+        delivery that power our work, here’s where to start:</p>
+    </div>
+    <div class="web-services-container">
+
+      <div class="web-service-card">
+        <div class="upper">
+          <h2>Services</h2>
+          <p>
+            From investor-ready MVPs and product design systems to full dev team extensions, we help tech companies
+            build things that work and last. Whether you need UX strategy, interface design, or ongoing product
+            delivery, you’ll work with a focused team that embeds fast, adapts to your stack, and delivers without
+            dragging timelines.
+          </p>
+        </div>
+
+        <div class="border-btn">
+          <a href="../cases.html">
+            <img src="../images/arrow-right-dark.svg" alt="" class="left-arrow" />
+            <p>Explore</p>
+            <img src="../images/arrow-right-dark.svg" alt="" class="right-arrow" />
+          </a>
+        </div>
+      </div>
+
+      <div class="web-service-card">
+        <div class="upper">
+          <h2>Cases</h2>
+          <p>
+            We design and build products across FinTech, EdTech, Healthcare, Web3, and SaaS. From mobile apps and
+            dashboards to branded websites and internal platforms, our work covers real user needs at every product
+            stage. Whether it’s shaping flows from scratch or delivering clean UI kits for development, we focus on
+            clarity, usability, and results that make sense.
+          </p>
+        </div>
+
+        <div class="border-btn">
+          <a href="../cases.html">
+            <img src="../images/arrow-right-dark.svg" alt="" class="left-arrow" />
+            <p>Explore</p>
+            <img src="../images/arrow-right-dark.svg" alt="" class="right-arrow" />
+          </a>
+        </div>
+      </div>
+
+      <div class="web-service-card">
+        <div class="upper">
+          <h2>Prices</h2>
+          <p>
+            Every product and company are different, but pricing shouldn’t feel like a black box. We offer transparent
+            estimates for every stage of building a product: design, development, research, and strategy. Whether
+            launching an app, building an MVP, or redesigning a platform, you’ll see the scope, service, and delivery
+            details clearly laid out.
+          </p>
+        </div>
+
+        <div class="border-btn">
+          <a href="../cases.html">
+            <img src="../images/arrow-right-dark.svg" alt="" class="left-arrow" />
+            <p>Explore</p>
+            <img src="../images/arrow-right-dark.svg" alt="" class="right-arrow" />
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- contact us -->
+  <div class="contact-us" id="contact">
+    <div class="heading">
+      <p class="multi-use-p">Contact us</p>
+      <h1 class="multi-use-heading fade-text">
+        Have a project in mind? <br />
+        Let's chat
+      </h1>
+    </div>
+
+    <div class="contact-container">
+      <div class="contact-left">
+        <form action="">
+          <div class="form-input">
+            <div class="form-input-inner-content">
+              <span>
+                <label for="">Your Name</label> <br />
+                <input type="text" name="" id="" placeholder="ENTER YOUR NAME" />
+                <br />
+              </span>
+              <span>
+                <label for="">Your Email</label><br />
+                <input type="email" name="" id="" placeholder="ENTER YOUR EMAIL" /><br />
+              </span>
+            </div>
+            <label for="">Message</label><br />
+            <input type="email" name="" id="" placeholder="Tell us about your project" />
+          </div>
+
+          <div class="attach-btn">
+            <label for="" class="attach-btn">
+              <img src="../images/clip.svg" alt="" />&nbsp; Attach file
+            </label>
+            <input type="file" id="fileInput" />
+          </div>
+        </form>
+
+        <div class="budget-btn-cont">
+          <p>Your budget for this project?</p>
+          <div class="budget-btn">
+            <span>up to $10k</span>
+            <span>$10-$20k</span>
+            <span>$20-$50k</span>
+            <span>$50-$100k</span>
+            <span>>$100k</span>
+          </div>
+
+          <div class="terms-btn">
+            <div class="contact-btn">
+              <div class="btn">
+                <a href="#">submit</a>
+              </div>
+            </div>
+            <p>
+              By clicking this button you accept
+              <a href="https://phenomenonstudio.com/terms-of-use/">Terms of Service</a>
+              and <br />
+              <a href="https://phenomenonstudio.com/privacy-policy/">Privacy Policy</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right">
+        <div class="contact-right-card">
+          <h2>
+            Have a project to <br />
+            discuss?
+          </h2>
+          <div class="contact-card-img">
+            <img src="../images/ksenia.jpg.webp" alt="" />
+            <div class="contact-card-img-heading">
+              <span>
+                <p>Kseniia Shalia</p>
+                <img src="../images/linkedin-alt.svg" alt="" />
+              </span>
+
+              <p>Account Executive</p>
+              <div class="border-btn">
+                <img src="../images/copy.svg" alt="" /> &nbsp;
+                <a href=""> hello@phenomenon-stu.. </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right-card">
+          <h2>Have a partnership in <br />mind?</h2>
+          <div class="contact-card-img">
+            <img src="../images/polina.jpg.webp" alt="" />
+            <div class="contact-card-img-heading">
+              <span>
+                <p>Polina Chebanova</p>
+                <img src="../images/linkedin-alt.svg" alt="" /> &nbsp;
+              </span>
+
+              <p>Co-Founder & CPO</p>
+              <div class="border-btn">
+                <img src="../images/copy.svg" alt="" /> &nbsp;
+                <a href=""> polina@phenomenon-st.. </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer section -->
+  <div id="footer-container"></div>
+  <!-- gsap cdn link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+    integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- gsap scroll trigger link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+    integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- script link -->
+  <script src="../navbar.js"></script>
+  <script src="../script.js"></script>
+  <script src="./about-us.js"></script>
+  <!-- <script src="../services-repo/design/web-design/script.js"></script> -->
+  <script src="/footer-page.js"></script>
+
+</body>
+
+</html>

@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll(".industry-specific-right-card");
-    const menuLinks = document.querySelectorAll(".industry-specific-menu a");
+    const industrySections = document.querySelectorAll(".industry-specific-right-card");
+    const industryMenuLinks = document.querySelectorAll(".industry-specific-menu a");
 
     // First menu item active by default
-    menuLinks[0].classList.add("active");
+    industryMenuLinks[0].classList.add("active");
 
     const observer = new IntersectionObserver(
         (entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    menuLinks.forEach((link) => {
+                    industryMenuLinks.forEach((link) => {
                         link.classList.remove("active");
 
                         if (link.getAttribute("href") === "#" + entry.target.id) {
@@ -24,5 +24,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     );
 
-    sections.forEach((section) => observer.observe(section));
+    industrySections.forEach((section) => observer.observe(section));
 });

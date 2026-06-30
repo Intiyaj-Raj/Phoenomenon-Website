@@ -56,12 +56,11 @@ if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
   cards.forEach((card, index) => {
     if (index === 0) return;
 
-    // next card move up
     gsap.from(card, {
       yPercent: 100,
       ease: "none",
       scrollTrigger: {
-        trigger: ".page3",
+        trigger: ".p3-card",
         start: () => `top -${window.innerHeight * index}`,
         end: () => `+=${window.innerHeight}`,
         scrub: true,
@@ -70,12 +69,12 @@ if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
 
 
     gsap.to(cards[index - 1], {
-      opacity: 0,
+      opacity: 0.6,
       scale: 0.92,
       transformOrigin: "center",
       ease: "none",
       scrollTrigger: {
-        trigger: ".page3",
+        trigger: ".p5-card",
         start: () => `top -${window.innerHeight * index}`,
         end: () => `+=${window.innerHeight / 2}`,
         scrub: true,
@@ -127,7 +126,7 @@ if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
   page5Cards.forEach((card, index) => {
     if (index === 0) return;
 
-    // next card move up
+
     gsap.from(card, {
       yPercent: 100,
       ease: "none",
@@ -140,7 +139,6 @@ if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
     });
 
     gsap.to(page5Cards[index - 1], {
-      opacity: 0,
       scale: 0.92,
       transformOrigin: "center",
       ease: "none",

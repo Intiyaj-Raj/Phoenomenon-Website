@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const industrySections = document.querySelectorAll(".industry-specific-right-card");
     const industryMenuLinks = document.querySelectorAll(".industry-specific-menu a");
 
-    // First menu item active by default
+
     industryMenuLinks[0].classList.add("active");
 
     const observer = new IntersectionObserver(
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         },
         {
-            threshold: 0.5 // Card should be 50% visible
+            threshold: 0.5
         }
     );
 

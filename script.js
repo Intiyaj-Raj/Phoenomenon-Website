@@ -49,32 +49,70 @@ document.querySelectorAll(".fade-text").forEach((heading) => {
             page 3 scroll card
 =========================================
  */
+// if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
+
+//   const cards = gsap.utils.toArray(".p3-card");
+
+//   cards.forEach((card, index) => {
+//     if (index === 0) return;
+
+//     gsap.from(card, {
+//       yPercent: 100,
+//       ease: "none",
+//       scrollTrigger: {
+//         trigger: ".p3-card",
+//         start: () => `top -${window.innerHeight * index}`,
+//         end: () => `+=${window.innerHeight}`,
+//         scrub: true,
+//       },
+//     });
+
+
+//     gsap.to(cards[index - 1], {
+//       opacity: 0.6,
+//       scale: 0.92,
+//       transformOrigin: "center",
+//       ease: "none",
+//       scrollTrigger: {
+//         trigger: ".p5-card",
+//         start: () => `top -${window.innerHeight * index}`,
+//         end: () => `+=${window.innerHeight / 2}`,
+//         scrub: true,
+//       },
+//     });
+//   });
+// }
+
+
+
 if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
 
   const cards = gsap.utils.toArray(".p3-card");
 
   cards.forEach((card, index) => {
     if (index === 0) return;
 
+    // next card move up
     gsap.from(card, {
       yPercent: 100,
       ease: "none",
       scrollTrigger: {
-        trigger: ".p3-card",
+        trigger: ".page3",
         start: () => `top -${window.innerHeight * index}`,
         end: () => `+=${window.innerHeight}`,
         scrub: true,
       },
     });
 
-
+    // previous card opacity ko hatao + size chhota hota rahe
     gsap.to(cards[index - 1], {
-      opacity: 0.6,
+      opacity: 0,
       scale: 0.92,
       transformOrigin: "center",
       ease: "none",
       scrollTrigger: {
-        trigger: ".p5-card",
+        trigger: ".page3",
         start: () => `top -${window.innerHeight * index}`,
         end: () => `+=${window.innerHeight / 2}`,
         scrub: true,
@@ -258,6 +296,7 @@ if (!("IntersectionObserver" in window)) {
     observer.observe(media);
   });
 }
+
 /*
 =======================================================================
         typing effect (calculation type)

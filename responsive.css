@@ -34,15 +34,13 @@
     width: 100%;
     margin: 10px 0;
   }
-  .space-page,
-  footer {
+  .space-page {
     height: 200vh;
     position: relative;
     margin-top: -90vh;
     padding: 80px 35px;
   }
-  .space-text,
-  .sticky-footer {
+  .space-text {
     position: sticky;
     top: 100px;
     left: 0;
@@ -311,56 +309,6 @@ contact us section
   .contact-card-img {
     padding-top: 20px;
   }
-
-  /* footer section */
-  .upper-footer {
-    margin-top: 90vh;
-  }
-
-  .lower-footer {
-    margin-top: 40px;
-  }
-  .lower-footer-heading {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 15px;
-  }
-
-  .lower-footer-img {
-    width: 100%;
-    flex-wrap: wrap;
-    padding: 0;
-    margin-top: 20px;
-  }
-
-  .lower-footer-img a img {
-    width: 80px;
-    height: 80px;
-  }
-  .f-country {
-    width: 100%;
-    padding: 0;
-    margin-top: 20px;
-  }
-  .bottom-country-card,
-  .top-country-card {
-    width: 100%;
-    padding: 20px 0 20px 20px;
-    margin-top: 10px;
-    border: 1px solid #555;
-    border-radius: 5px;
-  }
-  .f-menu {
-    width: 25% !important;
-  }
-  .f-icons {
-    width: 35% !important;
-    padding-top: 40px;
-  }
-
-  .f-country {
-    width: 38% !important;
-  }
 }
 
 /* ============================================================================
@@ -508,27 +456,6 @@ contact us section
     padding-top: 20px;
   }
 
-  /* footer section */
-  .upper-footer {
-    width: 100%;
-    flex-direction: column;
-    margin-top: 90vh;
-  }
-  .f-menu,
-  .f-icons {
-    width: 100% !important;
-    padding-top: 30px;
-  }
-  .f-country {
-    width: 100% !important;
-  }
-  .f-icons {
-    height: 100px;
-    margin-bottom: 50px;
-  }
-  .f-icons i {
-    font-size: 16px;
-  }
   .special h2 {
     font-size: 40px;
   }

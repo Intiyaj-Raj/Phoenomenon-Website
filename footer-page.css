@@ -414,4 +414,10 @@
   .c-flag {
     width: 13%;
   }
+  .logo-box {
+    flex: 0 0 50%;
+    border: 1px solid #e5e5e5 !important;
+    border-left: none;
+    border-right: none;
+  }
 }

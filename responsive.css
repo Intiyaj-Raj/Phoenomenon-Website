@@ -369,6 +369,19 @@ contact us section
 */
 
 @media (max-width: 750px) {
+  .design-img {
+    flex-wrap: wrap;
+    height: auto;
+    border: none;
+  }
+
+  .design-img img {
+    width: 48%;
+    border: none;
+  }
+  .design-img p {
+    width: 50%;
+  }
   .special h2 {
     font-size: 40px !important;
   }

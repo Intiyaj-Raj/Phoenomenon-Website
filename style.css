@@ -86,7 +86,14 @@ a {
   position: relative;
   z-index: 2;
 }
-
+.fade-text span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
 .multi-use-p {
   text-transform: uppercase;
   font-weight: 600;

@@ -1,7 +1,7 @@
 document.querySelectorAll('.main-sub-head').forEach(header => {
     header.addEventListener('click', () => {
-        const content = header.nextElementSibling; // select just after the block after main sub head
-        const icon = header.querySelector('.toggle-icon'); // find icon in that header 
+        const content = header.nextElementSibling;
+        const icon = header.querySelector('.toggle-icon');
 
         // if content is visible, then hide the content
         if (content.classList.contains('collapsed')) {
@@ -19,9 +19,6 @@ document.querySelectorAll('.main-sub-head').forEach(header => {
 });
 
 
-
-
-// translate.js
 // translate.js
 
 window.addEventListener('load', () => {
@@ -58,10 +55,10 @@ window.addEventListener('load', () => {
 
     const countrySelect = document.getElementById("countrySelect");
     const languageSelect = document.getElementById("languageSelect");
-    
+
     const translatableElements = document.querySelectorAll('.main h1, .main h4, .main p, .main li, .main h3');
     const originalTexts = [];
-    
+
     translatableElements.forEach((el) => {
         originalTexts.push(el.innerText);
     });
@@ -92,19 +89,17 @@ window.addEventListener('load', () => {
         translatableElements.forEach(el => el.style.opacity = "0.4");
 
         try {
-            // Google Client API use kar rahe hain jo ek saath MULTIPLE texts ko accept karti hai!
-            // Isse sirf EK single API call jayegi pure page ke liye, speed rocket ho jayegi.
+
             const baseUrl = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=" + targetLang + "&dt=t";
-            
+
             const translationPromises = originalTexts.map(async (textToTranslate, i) => {
                 if (!textToTranslate.trim()) return;
 
                 const url = `${baseUrl}&q=${encodeURIComponent(textToTranslate)}`;
                 const response = await fetch(url);
                 const data = await response.json();
-                
+
                 if (data && data[0]) {
-                    // Google ka response structure array format me hota hai, use extract kar rahe hain
                     let translatedText = data[0].map(item => item[0]).join('');
                     translatableElements[i].innerText = translatedText;
                 }

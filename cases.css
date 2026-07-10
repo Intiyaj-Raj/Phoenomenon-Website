@@ -10,7 +10,7 @@
   padding: 0 35px;
 }
 .caseHeading .case_btn button {
-  font-size: 11px;
+  font-size: 14px;
   display: block;
 }
 
@@ -53,6 +53,7 @@
   padding-right: 20px;
   position: sticky;
   top: 0px;
+  z-index: 999;
 }
 
 .project-right-card::-webkit-scrollbar {

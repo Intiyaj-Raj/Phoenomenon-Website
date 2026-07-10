@@ -82,7 +82,7 @@ a {
   width: 100%;
   color: white;
   padding: 10vw 0;
-  padding-top: 140px;
+  padding-top: 90px;
   position: relative;
   z-index: 2;
 }
@@ -105,7 +105,7 @@ a {
 }
 .multi-use-heading {
   font-weight: 400;
-  font-size: 60px;
+  font-size: 75px;
   line-height: 1.2;
 }
 .mob-heading {
@@ -279,10 +279,10 @@ a {
   font-size: 14px;
 }
 .space-page {
-  height: 200vh;
+  height: 159vh;
   position: relative;
   margin-top: -90vh;
-  padding: 80px 35px;
+  padding: 35px 35px;
   background: #ffff;
 }
 .space-text {
@@ -491,7 +491,7 @@ a {
 .p3-left p {
   font-size: 20px;
   line-height: 1.5;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .p3-center {
@@ -504,7 +504,7 @@ a {
 .p3-center p {
   font-size: 28px;
   line-height: 1.4;
-  color: #555;
+  color: #2c2b2b;
   font-weight: 400;
 }
 .p3-right {
@@ -540,7 +540,8 @@ a {
 #page4,
 .contact-us {
   position: relative;
-  margin-top: -100vh;
+  margin-top: -50vh;
+  margin-bottom: 20vh;
   min-height: 200vh;
   background: #080d10;
   color: #fff;
@@ -637,8 +638,9 @@ a {
 
 .heading p:nth-child(3) {
   padding: 0px 0 100px;
-  font-size: 20px;
-  color: #fffefd;
+  font-size: 22px;
+  color: #cdcbca;
+  line-height: 1.4;
   font-weight: 400;
 }
 .p4-container {
@@ -840,6 +842,7 @@ a {
   font-weight: 600;
   color: #555;
   letter-spacing: 2px;
+  text-transform:uppercase ;
 }
 .mob-p5-card h1,
 .p5-right-heading h1 {

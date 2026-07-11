@@ -772,6 +772,7 @@ footer {
   font-weight: 600;
   color: #555;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 .mob-p5-card h1,
 .p5-right-heading h1 {

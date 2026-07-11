@@ -17,6 +17,22 @@
   --btn-border: #1b2023 !important;
 }
 
+/* Logo swaps from white+orange -> black+orange in sync with the theme swap above */
+.navbar-white .logo-dark-bg,
+.insights-navbar-mode .logo-dark-bg,
+#navbar-container.insights-navbar-mode .navbar .logo-dark-bg,
+.navbar:has(.sub-menu:hover) .logo-dark-bg {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+.navbar-white .logo-light-bg,
+.insights-navbar-mode .logo-light-bg,
+#navbar-container.insights-navbar-mode .navbar .logo-light-bg,
+.navbar:has(.sub-menu:hover) .logo-light-bg {
+  opacity: 1 !important;
+  pointer-events: auto;
+}
+
 /* ==========================================
    2. GLOBAL & NAVBAR STYLES
    ========================================== */
@@ -50,9 +66,31 @@ body {
   align-items: center;
 }
 
-.phenomenon-text {
-  font-size: 20px;
-  color: inherit;
+.phenomenon-logo-wrap {
+  position: relative;
+  display: block;
+  height: 26px;
+  width: 159px; /* adjust to match your logo's real aspect ratio */
+}
+
+.phenomenon-logo {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  /* height: 100%; */
+  width: 100%;
+  object-fit: contain;
+  object-position: left center;
+  transition: opacity 0.3s ease;
+}
+
+/* Default = black navbar: show the white+orange logo, hide the black+orange one */
+.logo-dark-bg {
+  opacity: 1;
+}
+.logo-light-bg {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .nav-icon {
@@ -79,6 +117,7 @@ body {
 .nav-links {
   text-decoration: none;
   color: inherit;
+  font-weight: 600;
 }
 
 /* ==========================================
@@ -166,6 +205,7 @@ body {
   height: 250px;
   background: #ff7a00;
   border-radius: 50%;
+  
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
@@ -357,7 +397,7 @@ body {
 .get-in-touch-btn[data-theme="dark-btn"] {
   background-color: #1b2023;
   color: #ffffff;
-  border: 1px solid #1b2023;
+  border: 0px solid #1b2023;
 }
 .get-in-touch-btn[data-theme="dark-btn"]::after {
   filter: brightness(0) invert(1) !important; /* White arrow */
@@ -366,7 +406,7 @@ body {
 .get-in-touch-btn[data-theme="light-btn"] {
   background-color: #ffffff !important;
   color: #1b2023 !important;
-  border: 1px solid transparent !important;
+  border: 0px solid transparent !important;
 }
 .get-in-touch-btn[data-theme="light-btn"]::after {
   filter: brightness(0) !important; /* Black arrow */
@@ -428,8 +468,14 @@ body {
     transition: background-color 0.3s ease-in-out;
   }
 
-  .phenomenon-text {
-    color: white;
+  .navbar:has(.menu-icon-active) .logo-dark-bg {
+    opacity: 0 !important;
+    pointer-events: none;
+  }
+
+  .navbar:has(.menu-icon-active) .logo-light-bg {
+    opacity: 1 !important;
+    pointer-events: auto;
   }
 
   .nav-section1 {
@@ -438,10 +484,6 @@ body {
 
   .navbar:has(.menu-icon-active) {
     background-color: #ffffff !important;
-  }
-
-  .navbar:has(.menu-icon-active) .phenomenon-text {
-    color: #000000 !important;
   }
 
   .menu-icon {

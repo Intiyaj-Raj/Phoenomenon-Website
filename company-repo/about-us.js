@@ -108,33 +108,36 @@ window.addEventListener('scroll', () => {
 
 
 
-// 1. Aapki Main Team Data List (Dono tabs isi list se chalenge)
+// 1. Clean data array with only images (no videos)
 const teamMembers = [
-  { name: "Polina C.", role: "(co-founder)", img: "./team-pics/pc-profile.webp", vid: "./team-pics/video_polina-1.mp4" },
-  { name: "Valerii F.", role: "(co-founder)", img: "./team-pics/valerii-profile.webp", vid: "./team-pics/valerii-video.mp4" },
-  { name: " Yuliia A.", role: "(CEO)", img: "./team-pics/yullia-profile.webp", vid: "./team-pics/yullia-video.mp4" },
-  { name: "Ruslan V.", role: "(head of design)", img: "./team-pics/ruslaan-profile.webp", vid: "./team-pics/ruslaan-video.mov" },
-  { name: "Alina S.", role: "(operations director)", img: "./team-pics/alina-profile.webp", vid: "./team-pics/video_polina-1.mp4" },
-  { name: "Anatoliy S.", role: "(head of development)", img: "./team-pics/anatoily-profile.webp", vid: "./team-pics/valerii-video.mp4" },
-  { name: "Denis R.", role: "(head of IT engineering)", img: "./team-pics/denis-r-profile.webp", vid: "./team-pics/yullia-video.mp4" },
-  { name: "Dmitriy K.", role: "(head of art)", img: "./team-pics/dmitrit-profile.webp", vid: "./team-pics/ruslaan-video.mov" },
-  { name: "Alena O.", role: "(promo team lead)", img: "./team-pics/alena-profiel.webp", vid: "./team-pics/video_polina-1.mp4" },
-  { name: "Artem i.", role: "(product team lead)", img: "./team-pics/artem-profile.webp", vid: "./team-pics/valerii-video.mp4" },
-  { name: "Anastasia D.", role: "(account executive)", img: "./team-pics/anastasia-profile.webp", vid: "./team-pics/yullia-video.mp4" },
-  { name: "Ksenia S.", role: "(account executive)", img: "./team-pics/ksenia-profile.webp", vid: "./team-pics/ruslaan-video.mov" },
-  { name: "Oleksandr K.", role: "(marketing manager)", img: "./team-pics/oleksandr.webp", vid: "./team-pics/video_polina-1.mp4" },
-  { name: "Iryna R.", role: "(PM lead)", img: "./team-pics/iryna.webp", vid: "./team-pics/valerii-video.mp4" },
-  { name: "Vadym S.", role: "(lead front-end engineer)", img: "./team-pics/vadym-profile.webp", vid: "./team-pics/yullia-video.mp4" },
-  { name: "Anna Ch..", role: "(HR manager)", img: "./team-pics/anna-ch.webp", vid: "./team-pics/ruslaan-video.mov" },
-  { name: "Denys M.", role: "(solution architect)", img: "./team-pics/denys-m-profile.webp", vid: "./team-pics/video_polina-1.mp4" },
-  { name: "Denys Z.", role: "(recruiter)", img: "./team-pics/denys.webp", vid: "./team-pics/valerii-video.mp4" },
-  { name: "Daria  L.", role: "(product designer)", img: "./team-pics/daria-profile.webp", vid: "./team-pics/yullia-video.mp4" },
-  { name: "Katerina K.", role: "(product designer)", img: "./team-pics/kterina-profile.webp", vid: "./team-pics/ruslaan-video.mov" }
+  { name: "Avinash Gour", role: "(co-founder)", img: "../infotive/our-team/Avinash sir.jpeg" },
+  { name: "Rithendr Gour", role: "(Performance Marketing Specialist)", img: "../infotive/our-team/ritendr-sir.jpeg" },
+  { name: " Sudha Patidar", role: "( Business Development Specialist)", img: "../infotive/our-team/sudha.jpeg" },
+  { name: "Akshay Patel", role: "(Technical Delivery Manager)", img: "../infotive/our-team/akshay.jpeg" },
+  { name: "Jagruti Hiwase", role: "(Human Resources Manager)", img: "../infotive/our-team/Jagruti Hiwase.jpeg" },
+  { name: "Dipanshu Rode", role: "(Growth Marketing Manager)", img: "../infotive/our-team/dipanshu-sir.jpeg" },
+  { name: "Vani Jain", role: "(Client Relationship Executive)", img: "../infotive/our-team/vani.jpeg" },
+  { name: "Saloni Jaiswal", role: "(Social Media Marketing Specialist)", img: "../infotive/our-team/saloni-ma'am.jpeg" },
+  { name: "Anurag Gour", role: "(Head of Sales)", img: "../infotive/our-team/anurag-gour .jpeg" },
+  { name: "Nishant Gour", role: "(Video Production Specialist)", img: "../infotive/our-team/nishant.jpeg" },
+  { name: "Risabh Raguwanshi", role: "(Operations Manager)", img: "../infotive/our-team/rishab-sir.jpeg" },
+   { name: "Vishal Prajapati", role: "(Frontend Engineer)", img: "../infotive/our-team/vishal.jpeg" },
+   { name: "Intiyaz Ansari", role: "(E-commerce Developer)", img: "../infotive/our-team/Intiyaz Ansari.jpeg" },
+  // { name: "Iryna R.", role: "(PM lead)", img: "./team-pics/iryna.webp" },
+  // { name: "Vadym S.", role: "(lead front-end engineer)", img: "./team-pics/vadym-profile.webp" },
+  // { name: "Anna Ch..", role: "(HR manager)", img: "./team-pics/anna-ch.webp" },
+  // { name: "Denys M.", role: "(solution architect)", img: "./team-pics/denys-m-profile.webp" },
+  // { name: "Denys Z.", role: "(recruiter)", img: "./team-pics/denys.webp" },
+  // { name: "Daria  L.", role: "(product designer)", img: "./team-pics/daria-profile.webp" },
+  // { name: "Katerina K.", role: "(product designer)", img: "./team-pics/kterina-profile.webp" }
 ];
 
+// 2. Pure dynamic card generation layout function
 function generateTeamCards(membersList, targetGridId) {
   const gridContainer = document.getElementById(targetGridId);
   if (!gridContainer) return;
+
+  gridContainer.innerHTML = ''; // Prevent layout duplicates
 
   membersList.forEach(member => {
     const item = document.createElement('div');
@@ -143,7 +146,6 @@ function generateTeamCards(membersList, targetGridId) {
     item.innerHTML = `
       <div class="media-container">
         <img src="${member.img}" alt="${member.name}" class="member-img">
-        <video src="${member.vid}" class="member-vid" muted loop playsinline></video>
       </div>
       <div class="member-info">
         <img src="./team-pics/mic-off-icon.svg" alt="" class="mic-img">
@@ -154,30 +156,41 @@ function generateTeamCards(membersList, targetGridId) {
   });
 }
 
-generateTeamCards(teamMembers, 'leadership-team-grid');
-generateTeamCards(teamMembers, 'talented-team-grid');
+// 3. Setup dynamic click tabs behavior engine matching your exact CSS selectors
+function initTeamTabs() {
+  // Target any button elements directly inside your button wrapper layout
+  const tabButtons = document.querySelectorAll('.team-page-btn button');
+  
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const targetId = button.getAttribute('data-target');
+      
+      // 1. Clear .active from all sister buttons to trigger circle scale down (0) animation
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      
+      // 2. Remove display styles from content panels
+      document.querySelectorAll('.p6-card').forEach(card => card.classList.remove('active-content'));
+      
+      // 3. Add .active to the clicked tab button to scale up (4) the black background circle
+      button.classList.add('active');
+      
+      // 4. Activate chosen content grid panel
+      const activeCard = document.getElementById(targetId);
+      if (activeCard) {
+        activeCard.classList.add('active-content');
+      }
+    });
+  });
+}
 
-
-document.addEventListener('mouseover', (e) => {
-  const card = e.target.closest('.team-item');
-  if (card) {
-    const video = card.querySelector('.member-vid');
-    if (video && video.paused) {
-      video.currentTime = 0;
-      video.play().catch(err => console.log("Autoplay context:", err));
-    }
-  }
+// Run engine safely on DOM mount
+document.addEventListener('DOMContentLoaded', () => {
+  generateTeamCards(teamMembers, 'leadership-team-grid');
+  generateTeamCards(teamMembers, 'talented-team-grid');
+  initTeamTabs();
 });
 
-document.addEventListener('mouseout', (e) => {
-  const card = e.target.closest('.team-item');
-  if (card) {
-    const video = card.querySelector('.member-vid');
-    if (video && !video.paused) {
-      video.pause();
-    }
-  }
-});
+
 
 
 // awards-hover-part

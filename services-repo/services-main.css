@@ -1845,3 +1845,30 @@ footer {
     padding: 40px 20px;
   }
 }
+
+
+/* Keeps the wrapper from exploding the flex spacing */
+.contact-linkedin-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  /* Adjust this if you want a tiny space on the left of the icon */
+  margin-left: 8px; 
+}
+
+/* Forces the LinkedIn icon to stay a fixed, professional size */
+.contact-linkedin-img {
+  width: 40px !important;  /* Locks the exact size */
+  height: 40px !important; /* Locks the exact size */
+  object-fit: contain;
+  display: block;
+}
+
+/* Optional: Slight hover opacity shift so the user knows it's a link */
+.contact-linkedin-link:hover {
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}

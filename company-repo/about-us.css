@@ -1847,27 +1847,6 @@ contact us section
   border-radius: 12px;
 }
 
-.member-vid {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  pointer-events: none;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: opacity 0.3s ease;
-}
-
-/* --- HOVER EFFECT --- */
-.team-item:hover .member-img {
-  opacity: 0;
-}
-
-.team-item:hover .member-vid {
-  opacity: 1;
-}
-
 .member-info {
   display: inline-flex;
   align-items: center;

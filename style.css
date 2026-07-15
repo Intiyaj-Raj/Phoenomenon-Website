@@ -279,9 +279,9 @@ a {
   font-size: 14px;
 }
 .space-page {
-  height: 159vh;
+  /* height: 159vh; */
   position: relative;
-  margin-top: -90vh;
+  margin-top: 0vh;
   padding: 35px 35px;
   background: #ffff;
 }
@@ -482,9 +482,13 @@ a {
   z-index: 3;
 }
 
-.p3-left,
+.p3-left {
+  width: 30%;
+  height: 65%;
+}
+
 .p3-right {
-  width: 22%;
+  width: 15%;
   height: 65%;
 }
 
@@ -897,7 +901,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 5px 0;
 }
 
 .border-btn a {
@@ -1687,7 +1691,7 @@ contact us section
 /* Forces the LinkedIn icon to stay a fixed, professional size */
 .contact-linkedin-img {
   width: 40px !important;  /* Locks the exact size */
-  height: 40px !important; /* Locks the exact size */
+  height: 30px !important; /* Locks the exact size */
   object-fit: contain;
   display: block;
 }

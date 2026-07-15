@@ -823,7 +823,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .border-btn a {
@@ -1658,7 +1658,8 @@ contact us section
   display: flex;
 }
 .contact-card-img img:nth-child(1) {
-  width: 65px;
+  width: 82px;
+  border-radius: 10px;
   height: 90px;
 }
 .contact-card-img-heading {

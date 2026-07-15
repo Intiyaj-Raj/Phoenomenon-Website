@@ -109,20 +109,66 @@ window.addEventListener('scroll', () => {
 
 
 // 1. Clean data array with only images (no videos)
+// const teamMembers = [
+//   { name: "Avinash Gour", role: "(Founder & CEO)", img: "../infotive/Avinash-sir-2.jpeg" },
+//   { name: "Ritendra Gour", role: "(Performance Marketing Specialist)", img: "../infotive/our-team/ritendr-sir.jpeg" },
+//   { name: " Sudha Patidar", role: "( Business Development Specialist)", img: "../infotive/our-team/sudha.jpeg" },
+//   { name: "Akshay Patel", role: "(Technical Delivery Manager)", img: "../infotive/our-team/akshay.jpeg" },
+//   { name: "Jagruti Hiwase", role: "(Human Resources Manager)", img: "../infotive/our-team/Jagruti Hiwase.jpeg" },
+//   { name: "Deepanshu Rode", role: "(Growth Marketing Manager)", img: "../infotive/our-team/dipanshu-sir.jpeg" },
+//  { name: "Anurag Gour", role: "(Head of Sales)", img: "../infotive/our-team/anurag-gour .jpeg" },
+//   { name: "Saloni Jaiswal", role: "(Social Media Marketing Specialist)", img: "../infotive/our-team/saloni-ma'am.jpeg" },
+//   { name: "Nishant Gour", role: "(Video Production Specialist)", img: "../infotive/our-team/nishant.jpeg" },
+//   { name: "Risabh Raguwanshi", role: "(Operations Manager)", img: "../infotive/our-team/rishab-sir.jpeg" },
+//    { name: "Srinivas Rao", role: "(Software Engineer (MERN Stack))", img: "../infotive/our-team/raw.png" },
+//    { name: "Vishal Prajapati", role: "(Frontend Engineer)", img: "../infotive/our-team/vishal.jpeg" },
+//    { name: "Intiyaj Ansari", role: "(E-commerce Developer)", img: "../infotive/our-team/Intiyaz Ansari.jpeg" },
+  
+//   // { name: "Vadym S.", role: "(lead front-end engineer)", img: "./team-pics/vadym-profile.webp" },
+//   // { name: "Anna Ch..", role: "(HR manager)", img: "./team-pics/anna-ch.webp" },
+//   // { name: "Denys M.", role: "(solution architect)", img: "./team-pics/denys-m-profile.webp" },
+//   // { name: "Denys Z.", role: "(recruiter)", img: "./team-pics/denys.webp" },
+//   // { name: "Daria  L.", role: "(product designer)", img: "./team-pics/daria-profile.webp" },
+//   // { name: "Katerina K.", role: "(product designer)", img: "./team-pics/kterina-profile.webp" }
+// ];
+
+// 2. Pure dynamic card generation layout function
+// function generateTeamCards(membersList, targetGridId) {
+//   const gridContainer = document.getElementById(targetGridId);
+//   if (!gridContainer) return;
+
+//   gridContainer.innerHTML = ''; // Prevent layout duplicates
+
+//   membersList.forEach(member => {
+//     const item = document.createElement('div');
+//     item.className = 'team-item';
+
+//     item.innerHTML = `
+//       <div class="media-container">
+//         <img src="${member.img}" alt="${member.name}" class="member-img">
+//       </div>
+//       <div class="member-info">
+//         <img src="./team-pics/mic-off-icon.svg" alt="" class="mic-img">
+//         <p class="member-name">${member.name} <span class="member-role">${member.role}</span></p>
+//       </div>
+//     `;
+//     gridContainer.appendChild(item);
+//   });
+// }
 const teamMembers = [
-  { name: "Avinash Gour", role: "(Founder & CEO)", img: "../infotive/Avinash-sir-2.jpeg" },
+  { name: "Avinash Gour", role: "(Founder & CEO)", img: "../infotive/our-team/Avinash sir - Copy.jpeg" },
   { name: "Ritendra Gour", role: "(Performance Marketing Specialist)", img: "../infotive/our-team/ritendr-sir.jpeg" },
   { name: " Sudha Patidar", role: "( Business Development Specialist)", img: "../infotive/our-team/sudha.jpeg" },
   { name: "Akshay Patel", role: "(Technical Delivery Manager)", img: "../infotive/our-team/akshay.jpeg" },
   { name: "Jagruti Hiwase", role: "(Human Resources Manager)", img: "../infotive/our-team/Jagruti Hiwase.jpeg" },
-  { name: "Dipanshu Rode", role: "(Growth Marketing Manager)", img: "../infotive/our-team/dipanshu-sir.jpeg" },
+  { name: "Deepanshu Rode", role: "(Growth Marketing Manager)", img: "../infotive/our-team/dipanshu-sir.jpeg" },
  { name: "Anurag Gour", role: "(Head of Sales)", img: "../infotive/our-team/anurag-gour .jpeg" },
   { name: "Saloni Jaiswal", role: "(Social Media Marketing Specialist)", img: "../infotive/our-team/saloni-ma'am.jpeg" },
   { name: "Nishant Gour", role: "(Video Production Specialist)", img: "../infotive/our-team/nishant.jpeg" },
   { name: "Risabh Raguwanshi", role: "(Operations Manager)", img: "../infotive/our-team/rishab-sir.jpeg" },
    { name: "Srinivas Rao", role: "(Software Engineer (MERN Stack))", img: "../infotive/our-team/raw.png" },
    { name: "Vishal Prajapati", role: "(Frontend Engineer)", img: "../infotive/our-team/vishal.jpeg" },
-   { name: "Intiyaz Ansari", role: "(E-commerce Developer)", img: "../infotive/our-team/Intiyaz Ansari.jpeg" },
+   { name: "Intiyaj Ansari", role: "(E-commerce Developer)", img: "../infotive/our-team/intiyaz.jpeg" },
   
   // { name: "Vadym S.", role: "(lead front-end engineer)", img: "./team-pics/vadym-profile.webp" },
   // { name: "Anna Ch..", role: "(HR manager)", img: "./team-pics/anna-ch.webp" },
@@ -155,6 +201,7 @@ function generateTeamCards(membersList, targetGridId) {
     gridContainer.appendChild(item);
   });
 }
+
 
 // 3. Setup dynamic click tabs behavior engine matching your exact CSS selectors
 function initTeamTabs() {

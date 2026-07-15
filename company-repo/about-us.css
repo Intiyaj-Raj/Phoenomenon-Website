@@ -1841,9 +1841,11 @@ contact us section
 }
 
 .member-img {
-  width: 50%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: center top;
+  display: block;
   transition: opacity 0.3s ease;
   border-radius: 12px;
 }
@@ -2366,8 +2368,8 @@ h1 {
   }
 
   .member-img {
-    width: 80%;
-    height: 85%;
+    width: 100%;
+    height: 100%;
   }
 
   .team-grid {

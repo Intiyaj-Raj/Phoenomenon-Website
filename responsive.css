@@ -7,6 +7,7 @@
     border-left: 1px solid #666;
   }
   .multi-use-heading {
+    margin-top: 500px;
     font-size: 50px;
   }
 }
@@ -152,6 +153,7 @@
     border-radius: 40px;
   }
   .multi-use-heading {
+    margin-top: 500px;
     font-size: 40px;
   }
   .hide-mob-heading {
@@ -489,6 +491,7 @@ contact us section
   }
 
   .multi-use-heading {
+    margin-top: 500px;
     font-size: 30px;
   }
   #hero .hero-text p:nth-child(1) {

@@ -137,7 +137,7 @@ body::-webkit-scrollbar {
 
 .label-name {
   color: gray;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 2.5px;
   /* margin-bottom: 15px; */
 }
@@ -150,18 +150,18 @@ body::-webkit-scrollbar {
   padding-top: 20px;
   outline: none;
   color: white;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .contact-form-input::placeholder {
   color: white;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .attach-file-btn {
   background-color: rgba(255, 255, 255, 0.0784313725);
   padding: 20px 30px;
-  font-size: 12px;
+  font-size: 14px;
   color: white;
   font-weight: 600;
   width: fit-content;
@@ -194,7 +194,7 @@ body::-webkit-scrollbar {
   border-radius: 10px;
   padding: 20px 30px;
   color: white;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   border: 1px solid rgba(255, 255, 255, 0.0784313725);
 }
@@ -217,7 +217,7 @@ body::-webkit-scrollbar {
   border-radius: 10px;
   background-color: #ff7a00;
   padding: 25px 40px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   color: white;
   display: flex;
@@ -227,7 +227,7 @@ body::-webkit-scrollbar {
 
 .submit-text {
   color: gray;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -269,7 +269,7 @@ body::-webkit-scrollbar {
 
 .have-project {
   width: 60%;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .shalia-details,
@@ -291,7 +291,8 @@ body::-webkit-scrollbar {
 
 .shalia-img,
 .polina-img {
-  width: 18%;
+  width: 22%;
+  border-radius: 10px;
 }
 
 .ks-name,
@@ -302,14 +303,14 @@ body::-webkit-scrollbar {
 
 .ks-role,
 .pc-role {
-  font-size: 14px;
+  font-size: 18px;
   color: gray;
 }
 
 .ks-id,
 .pc-id {
   display: flex;
-  font-size: 12px;
+  font-size: 14px;
   gap: 5px;
   /* margin-left: -15px; */
 }
@@ -339,7 +340,7 @@ body::-webkit-scrollbar {
 
 .ww-text,
 .key-text {
-  font-size: 12px;
+  font-size: 14px;
   color: #535658;
   font-weight: 600;
   /* margin-left: 10px; */
@@ -402,7 +403,7 @@ body::-webkit-scrollbar {
 }
 
 .country-text {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   color: #535658;
   letter-spacing: 1px;
@@ -478,7 +479,7 @@ body::-webkit-scrollbar {
   }
 
   .attach-file-btn {
-    font-size: 16px;
+    font-size: 18px;
     padding: 26px 18px;
   }
 }

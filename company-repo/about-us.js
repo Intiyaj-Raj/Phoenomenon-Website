@@ -110,20 +110,20 @@ window.addEventListener('scroll', () => {
 
 // 1. Clean data array with only images (no videos)
 const teamMembers = [
-  { name: "Avinash Gour", role: "(co-founder)", img: "../infotive/our-team/Avinash sir.jpeg" },
-  { name: "Rithendr Gour", role: "(Performance Marketing Specialist)", img: "../infotive/our-team/ritendr-sir.jpeg" },
+  { name: "Avinash Gour", role: "(Founder & CEO)", img: "../infotive/Avinash-sir-2.jpeg" },
+  { name: "Ritendra Gour", role: "(Performance Marketing Specialist)", img: "../infotive/our-team/ritendr-sir.jpeg" },
   { name: " Sudha Patidar", role: "( Business Development Specialist)", img: "../infotive/our-team/sudha.jpeg" },
   { name: "Akshay Patel", role: "(Technical Delivery Manager)", img: "../infotive/our-team/akshay.jpeg" },
   { name: "Jagruti Hiwase", role: "(Human Resources Manager)", img: "../infotive/our-team/Jagruti Hiwase.jpeg" },
   { name: "Dipanshu Rode", role: "(Growth Marketing Manager)", img: "../infotive/our-team/dipanshu-sir.jpeg" },
-  { name: "Vani Jain", role: "(Client Relationship Executive)", img: "../infotive/our-team/vani.jpeg" },
+ { name: "Anurag Gour", role: "(Head of Sales)", img: "../infotive/our-team/anurag-gour .jpeg" },
   { name: "Saloni Jaiswal", role: "(Social Media Marketing Specialist)", img: "../infotive/our-team/saloni-ma'am.jpeg" },
-  { name: "Anurag Gour", role: "(Head of Sales)", img: "../infotive/our-team/anurag-gour .jpeg" },
   { name: "Nishant Gour", role: "(Video Production Specialist)", img: "../infotive/our-team/nishant.jpeg" },
   { name: "Risabh Raguwanshi", role: "(Operations Manager)", img: "../infotive/our-team/rishab-sir.jpeg" },
+   { name: "Srinivas Rao", role: "(Software Engineer (MERN Stack))", img: "../infotive/our-team/raw.png" },
    { name: "Vishal Prajapati", role: "(Frontend Engineer)", img: "../infotive/our-team/vishal.jpeg" },
    { name: "Intiyaz Ansari", role: "(E-commerce Developer)", img: "../infotive/our-team/Intiyaz Ansari.jpeg" },
-  // { name: "Iryna R.", role: "(PM lead)", img: "./team-pics/iryna.webp" },
+  
   // { name: "Vadym S.", role: "(lead front-end engineer)", img: "./team-pics/vadym-profile.webp" },
   // { name: "Anna Ch..", role: "(HR manager)", img: "./team-pics/anna-ch.webp" },
   // { name: "Denys M.", role: "(solution architect)", img: "./team-pics/denys-m-profile.webp" },

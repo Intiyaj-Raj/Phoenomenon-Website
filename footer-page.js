@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const footerWrapper = document.createElement("div");
       footerWrapper.innerHTML = htmlContent;
       document.body.appendChild(footerWrapper);
-      console.log("footer fetched successfully!")
+      // console.log("footer fetched successfully!")
     })
     .catch((error) => console.error("Error loading footer:", error));
 });

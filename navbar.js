@@ -558,7 +558,7 @@ function initDynamicButtonTheme() {
 }
 
 
-console.log("Navbar JS Loaded successfully!");
+// console.log("Navbar JS Loaded successfully!");
 
 document.addEventListener("click", (event) => {
   const menuIcon = event.target.closest(".menu-icon");

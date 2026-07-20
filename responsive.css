@@ -2,185 +2,192 @@
   .contact-left {
     width: 60%;
   }
+
   .contact-right {
     width: 40%;
     border-left: 1px solid #666;
   }
+
   .multi-use-heading {
-    margin-top: 500px;
+    /* margin-top: 500px; */
     font-size: 50px;
   }
 }
 
 @media (max-width: 992px) {
   #main {
-    clip-path: polygon(
-      0 0,
-      100% 0,
-      100% 100%,
-      calc(50% + 46px) calc(100% - 0.37px),
-      calc(50% + 43px) calc(100% - 0.74px),
-      calc(50% + 40px) calc(100% - 1.48px),
-      calc(50% + 37px) calc(100% - 2.96px),
-      calc(50% + 34px) calc(100% - 5.18px),
-      calc(50% + 32px) calc(100% - 7.03px),
-      calc(50% + 29px) calc(100% - 9.62px),
-      calc(50% + 26px) calc(100% - 12.21px),
-      calc(50% + 24px) calc(100% - 15.17px),
-      calc(50% + 22px) calc(100% - 17.76px),
-      calc(50% + 20px) calc(100% - 21.09px),
-      calc(50% + 18px) calc(100% - 24.42px),
-      calc(50% + 16px) calc(100% - 27.75px),
-      calc(50% + 15px) calc(100% - 30.71px),
-      calc(50% + 14px) calc(100% - 33.67px),
-      calc(50% + 13px) calc(100% - 37px),
-      calc(50% + 11px) calc(100% - 37px),
-      calc(50% + 14px) calc(100% - 19.98px),
-      calc(50% + 15px) calc(100% - 14.06px),
-      calc(50% + 15px) 100%,
-      calc(50% - 15px) 100%,
-      calc(50% - 15px) calc(100% - 14.06px),
-      calc(50% - 14px) calc(100% - 19.98px),
-      calc(50% - 11px) calc(100% - 37px),
-      calc(50% - 13px) calc(100% - 37px),
-      calc(50% - 14px) calc(100% - 33.67px),
-      calc(50% - 15px) calc(100% - 30.71px),
-      calc(50% - 16px) calc(100% - 27.75px),
-      calc(50% - 18px) calc(100% - 24.42px),
-      calc(50% - 20px) calc(100% - 21.09px),
-      calc(50% - 22px) calc(100% - 17.76px),
-      calc(50% - 24px) calc(100% - 15.17px),
-      calc(50% - 26px) calc(100% - 12.21px),
-      calc(50% - 29px) calc(100% - 9.62px),
-      calc(50% - 32px) calc(100% - 7.03px),
-      calc(50% - 34px) calc(100% - 5.18px),
-      calc(50% - 37px) calc(100% - 2.96px),
-      calc(50% - 40px) calc(100% - 1.48px),
-      calc(50% - 43px) calc(100% - 0.74px),
-      calc(50% - 46px) calc(100% - 0.37px),
-      0 100%
-    );
+    clip-path: polygon(0 0,
+        100% 0,
+        100% 100%,
+        calc(50% + 46px) calc(100% - 0.37px),
+        calc(50% + 43px) calc(100% - 0.74px),
+        calc(50% + 40px) calc(100% - 1.48px),
+        calc(50% + 37px) calc(100% - 2.96px),
+        calc(50% + 34px) calc(100% - 5.18px),
+        calc(50% + 32px) calc(100% - 7.03px),
+        calc(50% + 29px) calc(100% - 9.62px),
+        calc(50% + 26px) calc(100% - 12.21px),
+        calc(50% + 24px) calc(100% - 15.17px),
+        calc(50% + 22px) calc(100% - 17.76px),
+        calc(50% + 20px) calc(100% - 21.09px),
+        calc(50% + 18px) calc(100% - 24.42px),
+        calc(50% + 16px) calc(100% - 27.75px),
+        calc(50% + 15px) calc(100% - 30.71px),
+        calc(50% + 14px) calc(100% - 33.67px),
+        calc(50% + 13px) calc(100% - 37px),
+        calc(50% + 11px) calc(100% - 37px),
+        calc(50% + 14px) calc(100% - 19.98px),
+        calc(50% + 15px) calc(100% - 14.06px),
+        calc(50% + 15px) 100%,
+        calc(50% - 15px) 100%,
+        calc(50% - 15px) calc(100% - 14.06px),
+        calc(50% - 14px) calc(100% - 19.98px),
+        calc(50% - 11px) calc(100% - 37px),
+        calc(50% - 13px) calc(100% - 37px),
+        calc(50% - 14px) calc(100% - 33.67px),
+        calc(50% - 15px) calc(100% - 30.71px),
+        calc(50% - 16px) calc(100% - 27.75px),
+        calc(50% - 18px) calc(100% - 24.42px),
+        calc(50% - 20px) calc(100% - 21.09px),
+        calc(50% - 22px) calc(100% - 17.76px),
+        calc(50% - 24px) calc(100% - 15.17px),
+        calc(50% - 26px) calc(100% - 12.21px),
+        calc(50% - 29px) calc(100% - 9.62px),
+        calc(50% - 32px) calc(100% - 7.03px),
+        calc(50% - 34px) calc(100% - 5.18px),
+        calc(50% - 37px) calc(100% - 2.96px),
+        calc(50% - 40px) calc(100% - 1.48px),
+        calc(50% - 43px) calc(100% - 0.74px),
+        calc(50% - 46px) calc(100% - 0.37px),
+        0 100%);
     border-radius: 40px;
   }
+
   #page4,
   .contact-us {
-    clip-path: polygon(
-      0 0,
-      calc(50% - 46px) 0.37px,
-      calc(50% - 43px) 0.74px,
-      calc(50% - 40px) 1.48px,
-      calc(50% - 37px) 2.96px,
-      calc(50% - 34px) 5.18px,
-      calc(50% - 32px) 7.03px,
-      calc(50% - 29px) 9.62px,
-      calc(50% - 26px) 12.21px,
-      calc(50% - 24px) 15.17px,
-      calc(50% - 22px) 17.76px,
-      calc(50% - 20px) 21.09px,
-      calc(50% - 18px) 24.42px,
-      calc(50% - 16px) 27.75px,
-      calc(50% - 15px) 30.71px,
-      calc(50% - 14px) 33.67px,
-      calc(50% - 13px) 37px,
-      calc(50% - 11px) 37px,
-      calc(50% - 14px) 19.98px,
-      calc(50% - 15px) 14.06px,
-      calc(50% - 15px) 0,
-      calc(50% + 15px) 0,
-      calc(50% + 15px) 14.06px,
-      calc(50% + 14px) 19.98px,
-      calc(50% + 11px) 37px,
-      calc(50% + 13px) 37px,
-      calc(50% + 14px) 33.67px,
-      calc(50% + 15px) 30.71px,
-      calc(50% + 16px) 27.75px,
-      calc(50% + 18px) 24.42px,
-      calc(50% + 20px) 21.09px,
-      calc(50% + 22px) 17.76px,
-      calc(50% + 24px) 15.17px,
-      calc(50% + 26px) 12.21px,
-      calc(50% + 29px) 9.62px,
-      calc(50% + 32px) 7.03px,
-      calc(50% + 34px) 5.18px,
-      calc(50% + 37px) 2.96px,
-      calc(50% + 40px) 1.48px,
-      calc(50% + 43px) 0.74px,
-      calc(50% + 46px) 0.37px,
-      100% 0,
-      100% 100%,
-      calc(50% + 46px) calc(100% - 0.37px),
-      calc(50% + 43px) calc(100% - 0.74px),
-      calc(50% + 40px) calc(100% - 1.48px),
-      calc(50% + 37px) calc(100% - 2.96px),
-      calc(50% + 34px) calc(100% - 5.18px),
-      calc(50% + 32px) calc(100% - 7.03px),
-      calc(50% + 29px) calc(100% - 9.62px),
-      calc(50% + 26px) calc(100% - 12.21px),
-      calc(50% + 24px) calc(100% - 15.17px),
-      calc(50% + 22px) calc(100% - 17.76px),
-      calc(50% + 20px) calc(100% - 21.09px),
-      calc(50% + 18px) calc(100% - 24.42px),
-      calc(50% + 16px) calc(100% - 27.75px),
-      calc(50% + 15px) calc(100% - 30.71px),
-      calc(50% + 14px) calc(100% - 33.67px),
-      calc(50% + 13px) calc(100% - 37px),
-      calc(50% + 11px) calc(100% - 37px),
-      calc(50% + 14px) calc(100% - 19.98px),
-      calc(50% + 15px) calc(100% - 14.06px),
-      calc(50% + 15px) 100%,
-      calc(50% - 15px) 100%,
-      calc(50% - 15px) calc(100% - 14.06px),
-      calc(50% - 14px) calc(100% - 19.98px),
-      calc(50% - 11px) calc(100% - 37px),
-      calc(50% - 13px) calc(100% - 37px),
-      calc(50% - 14px) calc(100% - 33.67px),
-      calc(50% - 15px) calc(100% - 30.71px),
-      calc(50% - 16px) calc(100% - 27.75px),
-      calc(50% - 18px) calc(100% - 24.42px),
-      calc(50% - 20px) calc(100% - 21.09px),
-      calc(50% - 22px) calc(100% - 17.76px),
-      calc(50% - 24px) calc(100% - 15.17px),
-      calc(50% - 26px) calc(100% - 12.21px),
-      calc(50% - 29px) calc(100% - 9.62px),
-      calc(50% - 32px) calc(100% - 7.03px),
-      calc(50% - 34px) calc(100% - 5.18px),
-      calc(50% - 37px) calc(100% - 2.96px),
-      calc(50% - 40px) calc(100% - 1.48px),
-      calc(50% - 43px) calc(100% - 0.74px),
-      calc(50% - 46px) calc(100% - 0.37px),
-      0 100%
-    );
+    clip-path: polygon(0 0,
+        calc(50% - 46px) 0.37px,
+        calc(50% - 43px) 0.74px,
+        calc(50% - 40px) 1.48px,
+        calc(50% - 37px) 2.96px,
+        calc(50% - 34px) 5.18px,
+        calc(50% - 32px) 7.03px,
+        calc(50% - 29px) 9.62px,
+        calc(50% - 26px) 12.21px,
+        calc(50% - 24px) 15.17px,
+        calc(50% - 22px) 17.76px,
+        calc(50% - 20px) 21.09px,
+        calc(50% - 18px) 24.42px,
+        calc(50% - 16px) 27.75px,
+        calc(50% - 15px) 30.71px,
+        calc(50% - 14px) 33.67px,
+        calc(50% - 13px) 37px,
+        calc(50% - 11px) 37px,
+        calc(50% - 14px) 19.98px,
+        calc(50% - 15px) 14.06px,
+        calc(50% - 15px) 0,
+        calc(50% + 15px) 0,
+        calc(50% + 15px) 14.06px,
+        calc(50% + 14px) 19.98px,
+        calc(50% + 11px) 37px,
+        calc(50% + 13px) 37px,
+        calc(50% + 14px) 33.67px,
+        calc(50% + 15px) 30.71px,
+        calc(50% + 16px) 27.75px,
+        calc(50% + 18px) 24.42px,
+        calc(50% + 20px) 21.09px,
+        calc(50% + 22px) 17.76px,
+        calc(50% + 24px) 15.17px,
+        calc(50% + 26px) 12.21px,
+        calc(50% + 29px) 9.62px,
+        calc(50% + 32px) 7.03px,
+        calc(50% + 34px) 5.18px,
+        calc(50% + 37px) 2.96px,
+        calc(50% + 40px) 1.48px,
+        calc(50% + 43px) 0.74px,
+        calc(50% + 46px) 0.37px,
+        100% 0,
+        100% 100%,
+        calc(50% + 46px) calc(100% - 0.37px),
+        calc(50% + 43px) calc(100% - 0.74px),
+        calc(50% + 40px) calc(100% - 1.48px),
+        calc(50% + 37px) calc(100% - 2.96px),
+        calc(50% + 34px) calc(100% - 5.18px),
+        calc(50% + 32px) calc(100% - 7.03px),
+        calc(50% + 29px) calc(100% - 9.62px),
+        calc(50% + 26px) calc(100% - 12.21px),
+        calc(50% + 24px) calc(100% - 15.17px),
+        calc(50% + 22px) calc(100% - 17.76px),
+        calc(50% + 20px) calc(100% - 21.09px),
+        calc(50% + 18px) calc(100% - 24.42px),
+        calc(50% + 16px) calc(100% - 27.75px),
+        calc(50% + 15px) calc(100% - 30.71px),
+        calc(50% + 14px) calc(100% - 33.67px),
+        calc(50% + 13px) calc(100% - 37px),
+        calc(50% + 11px) calc(100% - 37px),
+        calc(50% + 14px) calc(100% - 19.98px),
+        calc(50% + 15px) calc(100% - 14.06px),
+        calc(50% + 15px) 100%,
+        calc(50% - 15px) 100%,
+        calc(50% - 15px) calc(100% - 14.06px),
+        calc(50% - 14px) calc(100% - 19.98px),
+        calc(50% - 11px) calc(100% - 37px),
+        calc(50% - 13px) calc(100% - 37px),
+        calc(50% - 14px) calc(100% - 33.67px),
+        calc(50% - 15px) calc(100% - 30.71px),
+        calc(50% - 16px) calc(100% - 27.75px),
+        calc(50% - 18px) calc(100% - 24.42px),
+        calc(50% - 20px) calc(100% - 21.09px),
+        calc(50% - 22px) calc(100% - 17.76px),
+        calc(50% - 24px) calc(100% - 15.17px),
+        calc(50% - 26px) calc(100% - 12.21px),
+        calc(50% - 29px) calc(100% - 9.62px),
+        calc(50% - 32px) calc(100% - 7.03px),
+        calc(50% - 34px) calc(100% - 5.18px),
+        calc(50% - 37px) calc(100% - 2.96px),
+        calc(50% - 40px) calc(100% - 1.48px),
+        calc(50% - 43px) calc(100% - 0.74px),
+        calc(50% - 46px) calc(100% - 0.37px),
+        0 100%);
     border-radius: 40px;
   }
+
   .multi-use-heading {
-    margin-top: 500px;
+    /* margin-top: 500px; */
     font-size: 40px;
   }
+
   .hide-mob-heading {
     display: none;
   }
+
   .mob-heading {
     display: block;
   }
+
   /* hero section */
   #hero-bottom {
     flex-direction: column;
   }
+
   .hero-video {
     width: 100%;
     position: static;
   }
+
   .hero-video video,
   .hero-text {
     width: 100%;
     margin: 10px 0;
   }
+
   .space-page {
-    height: 200vh;
+    /* height: 100vh; */
     position: relative;
-    margin-top: -90vh;
-    padding: 80px 35px;
+    /* margin-top: -90vh; */
+    padding: 20px 35px;
   }
+
   .space-text {
     position: sticky;
     top: 100px;
@@ -206,6 +213,7 @@
     height: 150vh;
     flex-direction: column;
   }
+
   .p3-left,
   .p3-right,
   .p3-center {
@@ -231,6 +239,7 @@
   .p6-card-vid video {
     display: none;
   }
+
   .mob-video {
     display: block;
     margin: 20px 0;
@@ -244,11 +253,13 @@
   .heading p:nth-child(3) {
     padding: 50px 0;
   }
+
   .p4-container {
     flex-direction: column;
   }
+
   .p4-left {
-    height: 60px;
+    height: 40vh;
     width: 100%;
     position: static;
   }
@@ -258,11 +269,12 @@
   }
 
   .p4-menu {
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30px;
+    gap: 10px;
   }
+
   .p4-left .contact-btn {
     display: none;
   }
@@ -270,9 +282,12 @@
   .p4-right-container {
     width: 100%;
   }
+
   .p4-right-cont-heading h1 {
-    display: none;
+    /* display: none; */
+    font-size: 30px;
   }
+
   .box-btn span {
     width: 35px;
     height: 35px;
@@ -286,10 +301,12 @@
     width: 100%;
     height: 100%;
   }
+
   .p5-left-card img {
     width: 100%;
     height: 60%;
   }
+
   .p5-right-card {
     width: 100%;
     height: 100vh;
@@ -312,10 +329,12 @@
   .p6-card-vid {
     display: none;
   }
+
   .p6-card-content,
   .p6-wrapper {
     width: 100%;
   }
+
   .p6-mob-vid {
     display: block !important;
     width: 100%;
@@ -359,6 +378,7 @@
     padding: 10px 0;
     width: 100%;
   }
+
   /* =====================
         page 9
 =================  */
@@ -368,9 +388,11 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
   .p9-heading .heading {
     width: 100%;
   }
+
   .p9-heading-img {
     width: 100%;
     justify-content: space-between;
@@ -378,21 +400,26 @@
     flex-direction: column;
     gap: 5px;
   }
+
   .p9-head-card {
     width: 100%;
   }
+
   .testimonials {
     grid-template-columns: 1fr;
   }
+
   .video-wrapper img {
     height: 350px;
   }
+
   /* ====================
 contact us section
 =================== */
   .page10-wrapper {
     height: auto !important;
   }
+
   .page10 {
     position: static !important;
     top: 0 !important;
@@ -409,26 +436,32 @@ contact us section
     margin-top: 0 !important;
     /* padding: 15vw 0 2vw !important; */
   }
+
   .contact-us .heading {
     padding: 40px 35px 50px;
   }
+
   .contact-container,
   .form-input-inner-content {
     flex-direction: column;
     padding: 20px 0;
   }
+
   .contact-left,
   .form-input-inner-content span {
     width: 100%;
   }
+
   .terms-btn p {
     text-align: center;
   }
+
   .budget-btn span {
     display: inline-flex;
     flex-wrap: wrap;
     margin-top: 10px;
   }
+
   .contact-right {
     display: flex;
     justify-content: space-between;
@@ -436,17 +469,21 @@ contact us section
     border-top: 1px solid #666;
     border-left: none;
   }
+
   .contact-right .contact-right-card:nth-child(2) {
     border-top: none;
     border-left: 1px solid #666;
   }
+
   .contact-right .contact-right-card {
     width: 100%;
     border: none;
   }
+
   .contact-left {
     padding: 0 35px;
   }
+
   .contact-card-img {
     padding-top: 20px;
   }
@@ -468,19 +505,24 @@ contact us section
     width: 48%;
     border: none;
   }
+
   .design-img p {
     width: 50%;
   }
+
   .special h2 {
     font-size: 40px !important;
   }
+
   .p5-right-heading h1 {
     font-size: 25px;
   }
+
   .contact-btn .btn::after {
     width: 12px;
     height: 12px;
   }
+
   .contact-btn {
     width: 100%;
   }
@@ -491,30 +533,37 @@ contact us section
   }
 
   .multi-use-heading {
-    margin-top: 500px;
+    /* margin-top: 500px; */
     font-size: 30px;
   }
+
   #hero .hero-text p:nth-child(1) {
     font-size: 20px;
   }
+
   #page4 .heading .multi-use-p {
     padding-top: 60px;
   }
+
   .p4-right-box {
     height: 45vh;
   }
+
   .p4-box-bottom p:nth-child(1) {
     font-size: 16px;
   }
+
   .box-btn {
     display: none;
   }
+
   /* page 6 */
 
   .page6-btn button {
     font-size: 11px;
     padding: 14px 8px;
   }
+
   .description {
     width: 100%;
     flex-direction: column;
@@ -556,6 +605,7 @@ contact us section
     position: static;
     margin-top: 15px;
   }
+
   .contact-right {
     width: 100%;
     flex-direction: column;
@@ -565,29 +615,36 @@ contact us section
     gap: 0;
     flex-direction: column;
   }
+
   .terms-btn p {
     margin-top: 0;
     line-height: 1.4;
   }
+
   /* page 8 */
   .p8-card:nth-child(1),
   .p8-card:nth-child(3) {
     padding-right: 10px;
   }
+
   .p8-card p:nth-child(3) {
     padding: 50px 0;
   }
+
   .p8-card h1 {
     margin-top: 10px;
     font-size: 20px;
     line-height: 20px;
   }
+
   .awards-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .special .border-btn {
     margin-left: 10px;
   }
+
   .contact-right {
     width: 100%;
     border-top: 1px solid #666;
@@ -605,34 +662,42 @@ contact us section
   .mob-p3,
   .mob-page5 {
     display: block;
-    padding-bottom: 100vh;
+    /* padding-bottom: 100vh; */
   }
+
   .page3,
   .page5 {
     display: none;
   }
+
   .mob-border-btn {
     display: block;
   }
+
   .p5-tech {
     flex-direction: column !important;
     justify-content: flex-start;
     align-items: flex-start;
   }
+
   .p5-tech-heading {
     letter-spacing: 1.2px;
     padding: 15px 0;
   }
+
   .tech-desc {
     padding-bottom: 15px;
   }
+
   .page6 {
     margin-top: -100vh;
   }
+
   .page6-btn {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+
   .p5-btn {
     display: none !important;
   }
@@ -643,9 +708,55 @@ contact us section
     width: 100%;
     flex-direction: column;
   }
+
   #page4,
   .contact-us,
   #main {
     border-radius: 20px !important;
+  }
+}
+
+
+@media (max-width:576px) {
+  .p4-right-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .p4-right-box {
+    width: 100%;
+  }
+
+  .box-border {
+    border: none !important;
+  }
+
+  .p4-right-box{
+    border: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.0784313725) !important;
+  }
+
+  .p4-box-bottom{
+    padding-bottom: 40px;
+  }
+
+  .p9-heading .heading{
+    width: 100% !important;
+    padding: 0;
+  }
+
+  .p9-heading-img{
+    width: 100% !important;
+    padding: 0;
+  }
+
+  .p9-head-card{
+    width: 100% !important;
+    margin-top: 20px;
+  }
+
+  .p9-head-card a{
+    padding: 10px;
   }
 }

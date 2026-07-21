@@ -638,7 +638,11 @@ contact us section
   }
 
   .awards-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+    .contact-btn .btn p{
+    padding: 0;
   }
 
   .special .border-btn {
@@ -759,4 +763,32 @@ contact us section
   .p9-head-card a{
     padding: 10px;
   }
+
+  .contact-btn .btn p{
+    padding: 0;
+  }
+
+  .page6-btn{
+    flex-wrap: wrap;
+  }
+
+  .page6-btn button{
+    width: 45%;
+  }
+
+  .contact-right-card{
+    padding: 10px !important;
+  }
+
+  .awards-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .p10-card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
 }

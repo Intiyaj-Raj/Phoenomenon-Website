@@ -147,7 +147,7 @@ a {
   transform: translate(-50%, -50%) scale(20);
 }
 
-.contact-btn .btn a {
+.contact-btn .btn p {
   position: relative;
   z-index: 2;
   color: white;
@@ -156,9 +156,10 @@ a {
   transition: all 0.3s ease;
   transform: translateX(-15px);
   text-transform: uppercase;
+  font-size: 14px;
 }
 
-.contact-btn .btn:hover a {
+.contact-btn .btn:hover p {
   transform: translateX(15px);
   color: black;
 }
@@ -188,6 +189,7 @@ a {
 .contact-btn .btn:nth-child(2) {
   background-color: #1b2023;
 }
+
 #hero-bottom {
   min-height: 100vh;
   width: 100%;
@@ -467,6 +469,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 25px;
 }
 
 .p3-card:nth-child(1),
@@ -1612,6 +1615,11 @@ contact us section
   align-items: center;
   gap: 30px;
 }
+
+.last-btn p{
+  padding: 0 !important;
+  margin: 0 !important;
+}
 .terms-btn p {
   text-transform: uppercase;
   color: #908f8d;
@@ -1632,6 +1640,7 @@ contact us section
 .contact-right {
   width: 30%;
   border-left: 1px solid #666;
+  margin-right: 30px;
 }
 .contact-right .contact-right-card {
   padding: 60px 0 40px 40px;

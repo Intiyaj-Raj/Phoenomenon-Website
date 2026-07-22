@@ -781,7 +781,9 @@ contact us section
   }
 
   .awards-grid {
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .p10-card{
@@ -789,6 +791,10 @@ contact us section
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+
+  .special h2{
+    font-size: 24px !important;
   }
 
 }

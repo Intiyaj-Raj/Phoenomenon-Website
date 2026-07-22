@@ -107,6 +107,8 @@
   border-radius: 20px;
   transition: all 0.3s ease;
   cursor: pointer;
+  padding: 15px 20px;
+  margin: 30px 10px;
 }
 
 .development-page-card:hover {
@@ -152,8 +154,13 @@
     flex-wrap: wrap;
     gap: 20px;
   }
+
   .dev-menu-item {
     font-size: 22px;
+  }
+
+  .dev-active {
+    color: black;
   }
 
   .dev-btn {

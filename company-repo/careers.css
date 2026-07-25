@@ -27,7 +27,7 @@
 
 .testimonial-card {
   padding: 45px 35px;
-  min-height: 500px;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -55,7 +55,7 @@
 .user {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 10px;
   margin-top: 40px;
 }
 
@@ -203,6 +203,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  justify-content: space-between;
 }
 
 .story-top img {

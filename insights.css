@@ -40,12 +40,13 @@ body {
   width: 100%;
   gap: 30px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .insights-image {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 48%;
 }
 
 .img-part img {
@@ -204,4 +205,17 @@ body {
   .page-list li {
     padding: 10px 20px;
   }
+}
+
+
+
+/* Normal state: Saare sections default hidden rahenge */
+.category-content {
+  display: none;
+  width: 100%;
+}
+
+/* Active state: Jab active class milegi tab visible honge */
+.category-content.active-content {
+  display: block;
 }

@@ -348,3 +348,40 @@ document.querySelectorAll(".multi-use-p").forEach((element) => {
 
   observer.observe(element);
 });
+
+
+
+
+
+
+// Global Function - Direct Onclick Trigger
+function scrollToTop() {
+  // 1. Direct Body & HTML Scroll (Jo aapki site pe scroll ho raha hai)
+  document.body.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+
+  document.documentElement.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+
+  // 2. Standard Window Scroll (Backup)
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+// Scroll detection logic (Body scrolling ke liye)
+document.body.addEventListener('scroll', () => {
+  const btn = document.getElementById('scrollToTopBtn');
+  if (!btn) return;
+
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    btn.classList.add('show');
+  } else {
+    btn.classList.remove('show');
+  }
+});

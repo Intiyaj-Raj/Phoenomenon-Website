@@ -1,3 +1,116 @@
+
+// Global Function - Direct Onclick Trigger
+function scrollToTop() {
+  // 1. Direct Body & HTML Scroll (Jo aapki site pe scroll ho raha hai)
+  document.body.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+
+  document.documentElement.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+
+  // 2. Standard Window Scroll (Backup)
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+// Scroll detection logic (Body scrolling ke liye)
+document.body.addEventListener('scroll', () => {
+  const btn = document.getElementById('scrollToTopBtn');
+  if (!btn) return;
+
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    btn.classList.add('show');
+  } else {
+    btn.classList.remove('show');
+  }
+});
+
+// attach file function to display name
+document.addEventListener('DOMContentLoaded', () => {
+  const fileInput = document.getElementById('fileInput');
+  const fileNameDisplay = document.getElementById('fileNameDisplay');
+
+  if (fileInput && fileNameDisplay) {
+    fileInput.addEventListener('change', (e) => {
+      if (e.target.files.length > 0) {
+        // fetch selected file name
+        const fileName = e.target.files[0].name;
+        fileNameDisplay.innerText = fileName; // Display text update
+      } else {
+        fileNameDisplay.innerText = "Attach file"; // Reset if no file
+      }
+    });
+  }
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const whatsappForm = document.getElementById("whatsappForm");
+
+  // Agar iss page par whatsappForm exist karta hai tabhi listener chalega
+  if (whatsappForm) {
+    let selectedBudget = "Not Selected";
+
+    // Budget buttons selection logic
+    const budgetOptions = whatsappForm.querySelectorAll(".budget-option");
+    budgetOptions.forEach((option) => {
+      option.addEventListener("click", () => {
+        budgetOptions.forEach((btn) => btn.classList.remove("active"));
+        option.classList.add("active");
+        selectedBudget = option.textContent.trim();
+      });
+    });
+
+    // File Input Name Display Logic
+    const fileInput = document.getElementById("fileInput");
+    const fileNameDisplay = document.getElementById("fileNameDisplay");
+
+    if (fileInput && fileNameDisplay) {
+      fileInput.addEventListener("change", (e) => {
+        if (e.target.files.length > 0) {
+          fileNameDisplay.textContent = e.target.files[0].name;
+        } else {
+          fileNameDisplay.textContent = "Attach file";
+        }
+      });
+    }
+
+    // Form Submit Listener
+    whatsappForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const userName = document.getElementById("userName")?.value.trim() || "";
+      const userEmail = document.getElementById("userEmail")?.value.trim() || "";
+      const userMessage = document.getElementById("userMessage")?.value.trim() || "";
+
+      // WhatsApp Number (Country code + Number without '+' sign)
+      const phoneNumber = "919133753252"; // Aapka WhatsApp Number
+
+      // Message Format
+      const textMessage = 
+`*New Project Inquiry!*
+
+*Name:* ${userName}
+*Email:* ${userEmail}
+*Budget:* ${selectedBudget}
+*Message:* ${userMessage}`;
+
+      const encodedMessage = encodeURIComponent(textMessage);
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+      // New tab me WhatsApp redirect karna
+      window.open(whatsappURL, "_blank");
+    });
+  }
+});
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 /*
@@ -44,44 +157,6 @@ document.querySelectorAll(".fade-text").forEach((heading) => {
 
   observer.observe(heading);
 });
-/*
-=========================================
-            page 3 scroll card
-=========================================
- */
-// if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
-
-//   const cards = gsap.utils.toArray(".p3-card");
-
-//   cards.forEach((card, index) => {
-//     if (index === 0) return;
-
-//     gsap.from(card, {
-//       yPercent: 100,
-//       ease: "none",
-//       scrollTrigger: {
-//         trigger: ".p3-card",
-//         start: () => `top -${window.innerHeight * index}`,
-//         end: () => `+=${window.innerHeight}`,
-//         scrub: true,
-//       },
-//     });
-
-
-//     gsap.to(cards[index - 1], {
-//       opacity: 0.6,
-//       scale: 0.92,
-//       transformOrigin: "center",
-//       ease: "none",
-//       scrollTrigger: {
-//         trigger: ".p5-card",
-//         start: () => `top -${window.innerHeight * index}`,
-//         end: () => `+=${window.innerHeight / 2}`,
-//         scrub: true,
-//       },
-//     });
-//   });
-// }
 
 
 
@@ -348,3 +423,6 @@ document.querySelectorAll(".multi-use-p").forEach((element) => {
 
   observer.observe(element);
 });
+
+
+

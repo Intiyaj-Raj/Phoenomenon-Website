@@ -105,137 +105,7 @@ body::-webkit-scrollbar {
   padding-bottom: 150px;
 }
 
-.form-left-part {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-  width: 70%;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.name-email-part {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.name-part,
-.email-part {
-  display: flex;
-  flex-direction: column;
-  width: 45%;
-}
-
-.message-part {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-top: 30px;
-}
-
-.label-name {
-  color: gray;
-  font-size: 14px;
-  letter-spacing: 2.5px;
-  /* margin-bottom: 15px; */
-}
-
-.contact-form-input {
-  border: none;
-  background-color: #080d10;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.0784313725);
-  padding-bottom: 20px;
-  padding-top: 20px;
-  outline: none;
-  color: white;
-  font-size: 14px;
-}
-
-.contact-form-input::placeholder {
-  color: white;
-  font-size: 14px;
-}
-
-.attach-file-btn {
-  background-color: rgba(255, 255, 255, 0.0784313725);
-  padding: 20px 30px;
-  font-size: 14px;
-  color: white;
-  font-weight: 600;
-  width: fit-content;
-  max-width: 100%;
-  margin-top: 30px;
-  border-radius: 10px;
-  border: none;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.budget-btns {
-  display: flex;
-  flex-direction: column;
-  padding: 30px 0;
-}
-
-.budget-btn-group {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 30px;
-  padding-top: 30px;
-  flex-wrap: wrap;
-}
-
-.budget-btn {
-  background-color: #080d10;
-  border: none;
-  border-radius: 10px;
-  padding: 20px 30px;
-  color: white;
-  font-size: 14px;
-  font-weight: bold;
-  border: 1px solid rgba(255, 255, 255, 0.0784313725);
-}
-
-/* .first-btn {
-  background-color: white;
-  color: black;
-} */
-
-.submit-group {
-  width: 75%;
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  /* flex-wrap: wrap; */
-}
-
-.submit-btn {
-  border: none;
-  border-radius: 10px;
-  background-color: #ff7a00;
-  padding: 25px 40px;
-  font-size: 14px;
-  font-weight: 600;
-  color: white;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.submit-text {
-  color: gray;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.underline-submit-text {
-  color: white;
-  font-weight: 600;
-}
+/*  */
 
 .form-right-part {
   width: 30%;
@@ -390,7 +260,7 @@ body::-webkit-scrollbar {
 }
 
 .country-name {
-  width: 25%;
+  width: 30%;
 }
 
 .country-location {
@@ -398,8 +268,8 @@ body::-webkit-scrollbar {
 }
 
 .flag-logo {
-  width: 38px;
-  height: 20px;
+  width: 40px;
+  height: 30px;
 }
 
 .country-text {

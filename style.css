@@ -127,6 +127,7 @@ a {
   display: inline-flex;
   align-items: center;
   cursor: pointer;
+  border: none;
 }
 
 .contact-btn .btn::before {
@@ -1553,6 +1554,39 @@ contact us section
   text-transform: uppercase;
   color: white;
 }
+
+#userMessage{
+  background-color: black;
+  color: white;
+  width: 70%;
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+#userName, #userEmail{
+  background-color: #080d10;
+  color: white;
+}
+
+
+.attach-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+#fileNameDisplay {
+  font-size: 14px;
+  color: #333;
+  /* Long file names ke liye ellipsis (...) handle karne ke liye */
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .attach-btn {
   display: inline-flex;
   align-items: center;
@@ -1614,6 +1648,7 @@ contact us section
   justify-content: flex-start;
   align-items: center;
   gap: 30px;
+  border: none;
 }
 
 .last-btn p{
@@ -1740,4 +1775,37 @@ contact us section
 #scrollToTopBtn.show {
   opacity: 1 !important;
   visibility: visible !important;
+}
+
+
+
+.budget-option {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.budget-option.active {
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+
+
+
+
+/* Chrome & Edge Autofill Text & Background Fix */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active {
+    transition: background-color 50000s ease-in-out 0s;
+    -webkit-text-fill-color: #ffffff !important;
+    caret-color: #ffffff;
 }

@@ -176,7 +176,7 @@ body {
   z-index: 9999;
   background-color: var(--btn-bg) !important;
   color: var(--btn-text) !important;
-  border: 1px solid var(--btn-border) !important;
+  border: 1px solid var(--nav-bg) !important;
   border-radius: 8px;
   font-size: 12px;
   font-weight: 600;

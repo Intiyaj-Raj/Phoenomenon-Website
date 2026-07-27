@@ -41,10 +41,10 @@
           reinvention.
         </h1>
         <p class="services-learn-more-text">Learn more about the team of professionals who care about your <br> product
-          as much as you do and the fields we can help you with.</p> 
+          as much as you do and the fields we can help you with.</p>
       </div>
       <div class="contact-btn">
-        <a class="btn"  href="#">
+        <a class="btn" href="#contact">
           <p>Let’s talk</p>
         </a>
 
@@ -104,8 +104,9 @@
   <div class="space-page">
     <div class="space-text">
       <p class="multi-use-p">Product Design and Development Services by Stage</p>
-      <h1 class="multi-use-heading fade-text">From first launch to full reinvention <br>— web and app development<br/> that scales with you
-     
+      <h1 class="multi-use-heading fade-text">From first launch to full reinvention <br>— web and app development<br />
+        that scales with you
+
       </h1>
     </div>
   </div>
@@ -832,7 +833,7 @@
         </div>
       </div>
 
-       <!-- card 2 -->
+      <!-- card 2 -->
       <div class="p6-card" id="healthcare-card">
         <div class="p6-card-vid">
           <video class="reveal-media" src="/media/Custom-MVP-development.mp4" autoplay muted loop></video>
@@ -1130,7 +1131,7 @@
   </div>
 
   <!-- contact us -->
-   <div class="contact-us" id="contact">
+  <div class="contact-us" id="contact">
     <div class="heading">
       <p class="multi-use-p">Contact us</p>
       <h1 class="multi-use-heading fade-text">
@@ -1140,7 +1141,7 @@
     </div>
 
     <div class="contact-container">
-      <div class="contact-left">
+      <!-- <div class="contact-left">
         <form action="">
           <div class="form-input">
             <div class="form-input-inner-content">
@@ -1191,6 +1192,57 @@
 
           </div>
         </div>
+      </div> -->
+      <div class="contact-left">
+        <form id="whatsappForm">
+          <div class="form-input">
+            <div class="form-input-inner-content">
+              <span>
+                <label for="userName">Your Name</label> <br />
+                <input type="text" id="userName" placeholder="ENTER YOUR NAME" required />
+                <br />
+              </span>
+              <span>
+                <label for="userEmail">Your Email</label><br />
+                <input type="email" id="userEmail" placeholder="ENTER YOUR EMAIL" required /><br />
+              </span>
+            </div>
+
+            <label for="userMessage">Message</label><br />
+            <textarea id="userMessage" placeholder="Tell us about your project" rows="3" required></textarea>
+          </div>
+
+          <div class="attach-btn">
+            <label for="fileInput" class="attach-btn">
+              <img src="/images/clip.svg" alt="" />&nbsp;
+              <span id="fileNameDisplay">Attach file</span>
+            </label>
+            <input type="file" id="fileInput" />
+          </div>
+
+          <div class="budget-btn-cont">
+            <p>Your budget for this project?</p>
+            <div class="budget-btn">
+              <span class="budget-option">up to $1k</span>
+              <span class="budget-option">$1-$2k</span>
+              <span class="budget-option">$2-$5k</span>
+              <span class="budget-option">$5-$10k</span>
+              <span class="budget-option">&gt;$10k</span>
+            </div>
+
+            <div class="terms-btn">
+              <div class="contact-btn">
+                <button type="submit" class="btn last-btn">
+                  <p>submit</p>
+                </button>
+              </div>
+              <p>
+                By clicking this button you accept <br>
+                <a href="/terms-of-use.html">Terms of Service</a> and <a href="/privacy-policy.html">Privacy Policy</a>
+              </p>
+            </div>
+          </div>
+        </form>
       </div>
       <div class="contact-right">
         <div class="contact-right-card">
@@ -1201,10 +1253,10 @@
           <div class="contact-card-img">
             <img src="/infotive/our-team/hrr.jpeg" alt="" />
             <div class="contact-card-img-heading">
-               <span>
+              <span>
                 <p>Nisha Patel</p>
-                <a href="https://www.linkedin.com/in/nisha-patel-hr/?isSelfProfile=false" target="_blank" rel="noopener noreferrer"
-                  class="contact-linkedin-link">
+                <a href="https://www.linkedin.com/in/nisha-patel-hr/?isSelfProfile=false" target="_blank"
+                  rel="noopener noreferrer" class="contact-linkedin-link">
                   <img src="/images/linkedin-alt.svg" alt="Linkedin" class="contact-linkedin-img" />
                 </a>
               </span>
@@ -1234,8 +1286,8 @@
 
               <span>
                 <p>Avinash Gour</p>
-                <a href="https://www.linkedin.com/in/avinash-gour?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer"
-                  class="contact-linkedin-link">
+                <a href="https://www.linkedin.com/in/avinash-gour?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                  target="_blank" rel="noopener noreferrer" class="contact-linkedin-link">
                   <img src="/images/linkedin-alt.svg" alt="Linkedin" class="contact-linkedin-img" />
                 </a>
               </span>
@@ -1255,8 +1307,12 @@
   </div>
 
   <!-- footer section -->
-
   <div id="footer-container"></div>
+
+  <!-- Scroll To Top Button -->
+  <button id="scrollToTopBtn" onclick="scrollToTop()">
+    <i class="bi bi-arrow-up"></i>
+  </button>
 
   <!-- gsap cdn link -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
@@ -1271,6 +1327,7 @@
   <script src="../script.js"></script>
   <script src="../footer-page.js"></script>
   <script src="../navbar.js"></script>
+
 </body>
 
 </html>

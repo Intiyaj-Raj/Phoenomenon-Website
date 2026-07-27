@@ -2113,56 +2113,55 @@
 
     <div class="contact-container">
       <div class="contact-left">
-        <form action="">
+        <form id="whatsappForm">
           <div class="form-input">
             <div class="form-input-inner-content">
               <span>
-                <label for="">Your Name</label> <br />
-                <input type="text" name="" id="" placeholder="ENTER YOUR NAME" />
+                <label for="userName">Your Name</label> <br />
+                <input type="text" id="userName" placeholder="ENTER YOUR NAME" required />
                 <br />
               </span>
               <span>
-                <label for="">Your Email</label><br />
-                <input type="email" name="" id="" placeholder="ENTER YOUR EMAIL" /><br />
+                <label for="userEmail">Your Email</label><br />
+                <input type="email" id="userEmail" placeholder="ENTER YOUR EMAIL" required /><br />
               </span>
             </div>
-            <label for="">Message</label><br />
-            <input type="email" name="" id="" placeholder="Tell us about your project" />
+
+            <label for="userMessage">Message</label><br />
+            <textarea id="userMessage" placeholder="Tell us about your project" rows="3" required></textarea>
           </div>
 
           <div class="attach-btn">
-            <label for="" class="attach-btn">
-              <img src="/images/clip.svg" alt="" />&nbsp; Attach file
+            <label for="fileInput" class="attach-btn">
+              <img src="/images/clip.svg" alt="" />&nbsp;
+              <span id="fileNameDisplay">Attach file</span>
             </label>
             <input type="file" id="fileInput" />
           </div>
-        </form>
 
-        <div class="budget-btn-cont">
-          <p>Your budget for this project?</p>
-          <div class="budget-btn">
-            <span>up to $1k</span>
-            <span>$1-$2k</span>
-            <span>$2-$5k</span>
-            <span>$5-$10k</span>
-            <span>>$10k</span>
-          </div>
-
-          <div class="terms-btn">
-            <div class="contact-btn">
-              <a class="btn last-btn" href="mailto:infotivesolutions@gmail.com">
-                <p>submit</p>
-              </a>
+          <div class="budget-btn-cont">
+            <p>Your budget for this project?</p>
+            <div class="budget-btn">
+              <span class="budget-option">up to $1k</span>
+              <span class="budget-option">$1-$2k</span>
+              <span class="budget-option">$2-$5k</span>
+              <span class="budget-option">$5-$10k</span>
+              <span class="budget-option">&gt;$10k</span>
             </div>
-            <p>
-              By clicking this button you accept
-              <a href="/terms-of-use.html">Terms of Service</a>
-              and <br />
-              <a href="/privacy-policy.html">Privacy Policy</a>
-            </p>
 
+            <div class="terms-btn">
+              <div class="contact-btn">
+                <button type="submit" class="btn last-btn">
+                  <p>submit</p>
+                </button>
+              </div>
+              <p>
+                By clicking this button you accept <br>
+                <a href="/terms-of-use.html">Terms of Service</a> and <a href="/privacy-policy.html">Privacy Policy</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
       <div class="contact-right">
         <div class="contact-right-card">
@@ -2227,6 +2226,13 @@
   </div>
 <!-- footer section -->
 <div id="footer-container"></div>
+
+<!-- Scroll To Top Button -->
+<button id="scrollToTopBtn" onclick="scrollToTop()">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+
 <!-- gsap cdn link -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
     integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="

@@ -37,7 +37,7 @@
     </span>
 
     <div class="form-section">
-      <div class="form-left-part">
+      <!-- <div class="form-left-part">
         <span class="name-email-part">
           <span class="name-part">
             <label class="label-name">YOUR NAME</label>
@@ -81,10 +81,59 @@
               <a href="/privacy-policy.html">Privacy Policy</a>
             </p>
           </div>
+      </div> -->
 
+      <div class="contact-left">
+        <form id="whatsappForm">
+          <div class="form-input">
+            <div class="form-input-inner-content">
+              <span>
+                <label for="userName">Your Name</label> <br />
+                <input type="text" id="userName" placeholder="ENTER YOUR NAME" required />
+                <br />
+              </span>
+              <span>
+                <label for="userEmail">Your Email</label><br />
+                <input type="email" id="userEmail" placeholder="ENTER YOUR EMAIL" required /><br />
+              </span>
+            </div>
 
+            <label for="userMessage">Message</label><br />
+            <textarea id="userMessage" placeholder="Tell us about your project" rows="3" required></textarea>
+          </div>
+
+          <div class="attach-btn">
+            <label for="fileInput" class="attach-btn">
+              <img src="/images/clip.svg" alt="" />&nbsp;
+              <span id="fileNameDisplay">Attach file</span>
+            </label>
+            <input type="file" id="fileInput" />
+          </div>
+
+          <div class="budget-btn-cont">
+            <p style="color: white;">Your budget for this project?</p>
+            <div class="budget-btn">
+              <span class="budget-option">up to $1k</span>
+              <span class="budget-option">$1-$2k</span>
+              <span class="budget-option">$2-$5k</span>
+              <span class="budget-option">$5-$10k</span>
+              <span class="budget-option">&gt;$10k</span>
+            </div>
+
+            <div class="terms-btn">
+              <div class="contact-btn">
+                <button type="submit" class="btn last-btn">
+                  <p>submit</p>
+                </button>
+              </div>
+              <p>
+                By clicking this button you accept <br>
+                <a href="/terms-of-use.html">Terms of Service</a> and <a href="/privacy-policy.html">Privacy Policy</a>
+              </p>
+            </div>
+          </div>
+        </form>
       </div>
-
       <div class="form-right-part">
         <div class="project-to-discuss">
           <span class="right-1st">
@@ -96,7 +145,8 @@
                 <p class="ks-role">Account Executive</p>
                 <p class="ks-id">
                   <img src="./pictures/copy-filled-icon.svg" alt="" class="copy-icon" />
-                  <a href="mailto:infotivesolutions@gmail.com" style="text-decoration: none; color: white;"><u>infotivesolutions@gmail.com</u></a>
+                  <a href="mailto:infotivesolutions@gmail.com"
+                    style="text-decoration: none; color: white;"><u>infotivesolutions@gmail.com</u></a>
                 </p>
               </span>
               <img src="./pictures/social-media-logos/linkedin-alt.svg" alt="">
@@ -111,10 +161,10 @@
                 <h4 class="pc-name">Avinash Gour</h4>
                 <p class="pc-role">Founder & CEO</p>
                 <p class="pc-id">
-                  <img src="./pictures/copy-filled-icon.svg" alt=""
-                    class="copy-icon" />
-                    <a href="mailto:infotivesolutions@gmail.com" style="text-decoration: none; color: white;"><u>infotivesolutions@gmail.com</u></a>
-                  </p>
+                  <img src="./pictures/copy-filled-icon.svg" alt="" class="copy-icon" />
+                  <a href="mailto:infotivesolutions@gmail.com"
+                    style="text-decoration: none; color: white;"><u>infotivesolutions@gmail.com</u></a>
+                </p>
               </span>
               <img src="./pictures/social-media-logos/linkedin-alt.svg" alt="">
             </span>
@@ -400,8 +450,13 @@
     </div>
 
     <!-- footer -->
-
     <div id="footer-container"></div>
+
+
+    <!-- Scroll To Top Button -->
+    <button id="scrollToTopBtn" onclick="scrollToTop()">
+      <i class="bi bi-arrow-up"></i>
+    </button>
 
     <!-- gsap cdn link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"

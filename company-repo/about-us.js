@@ -1,66 +1,3 @@
-const audio = document.getElementById('vf-audio-element');
-const playPauseBtn = document.getElementById('play-pause-btn');
-const playIcon = document.getElementById('play-icon');
-const pauseIcon = document.getElementById('pause-icon');
-const seekSlider = document.getElementById('seek-slider');
-const timeRemainingDisplay = document.getElementById('time-remaining');
-
-function formatTime(secs) {
-  const minutes = Math.floor(secs / 60);
-  const seconds = Math.floor(secs % 60);
-  const returnedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
-  const returnedMinutes = minutes < 10 ? `0${minutes}` : `${minutes}`;
-  return `-${returnedMinutes}:${returnedSeconds}`;
-}
-
-audio.addEventListener('loadedmetadata', () => {
-  seekSlider.max = Math.floor(audio.duration);
-  timeRemainingDisplay.textContent = formatTime(audio.duration);
-});
-
-// Play / Pause Toggle Logic
-playPauseBtn.addEventListener('click', () => {
-  if (audio.paused) {
-    audio.play();
-    playIcon.style.display = 'none';
-    pauseIcon.style.display = 'block';
-  } else {
-    audio.pause();
-    playIcon.style.display = 'block';
-    pauseIcon.style.display = 'none';
-  }
-});
-
-audio.addEventListener('timeupdate', () => {
-  seekSlider.value = Math.floor(audio.currentTime);
-
-  const remainingTime = audio.duration - audio.currentTime;
-  if (!isNaN(remainingTime)) {
-    timeRemainingDisplay.textContent = formatTime(remainingTime);
-  }
-});
-
-seekSlider.addEventListener('input', () => {
-  audio.currentTime = seekSlider.value;
-  const remainingTime = audio.duration - audio.currentTime;
-  if (!isNaN(remainingTime)) {
-    timeRemainingDisplay.textContent = formatTime(remainingTime);
-  }
-});
-
-audio.addEventListener('ended', () => {
-  playIcon.style.display = 'block';
-  pauseIcon.style.display = 'none';
-  seekSlider.value = 0;
-  timeRemainingDisplay.textContent = formatTime(audio.duration);
-});
-
-
-
-
-
-
-
 window.addEventListener('scroll', () => {
   const section = document.querySelector('.agency-in-numbers-inner-part');
   if (!section) return;
@@ -68,15 +5,12 @@ window.addEventListener('scroll', () => {
   const rect = section.getBoundingClientRect();
   const sectionHeight = rect.height;
 
-  // Jab section screen me enter karega tabhi animation shuru hogi
   if (rect.top <= window.innerHeight && rect.bottom >= 0) {
 
-    // Calculate progress (0 se 1 ke beech me)
     let totalScrollable = sectionHeight - window.innerHeight;
     let currentScroll = Math.abs(rect.top);
     let progress = Math.min(Math.max(currentScroll / totalScrollable, 0), 1);
 
-    // 1. Numbers Counter Logic (04 -> 78, etc.)
     let team = Math.floor(4 + (78 - 4) * progress);
     let projects = Math.floor(1 + (601 - 1) * progress);
     let clients = Math.floor(1 + (298 - 1) * progress);
@@ -87,16 +21,13 @@ window.addEventListener('scroll', () => {
     document.querySelector(".agency-numbers span:nth-child(3) h1").innerText = String(clients).padStart(3, '0');
     document.querySelector(".agency-numbers span:nth-child(4) h1").innerText = String(awards).padStart(2, '0');
 
-    // 2. Text Change aur Card Show karne ka Logic (Based on progress)
     const pText = document.querySelector(".vf-right-text");
     const card = document.querySelector(".vf-card");
 
     if (progress > 0.5) {
-      // 50% scroll hone ke baad content change aur card show
       pText.innerHTML = `Step by step, these first projects turned into long-term collaborations, and today our portfolio spans hundreds of products for companies around the world.`;
       card.classList.add('show-card');
     } else {
-      // Wapas upar jaane par purana state
       pText.innerHTML = `We started working with our first few startups on products they needed to bring to market quickly. Many of those early clients are still with us today, as we’ve grown side by side and watched each other evolve.`;
       card.classList.remove('show-card');
     }

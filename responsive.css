@@ -240,7 +240,7 @@
     display: none;
   }
 
-  .mob-video {
+  .mob-video, .p6-mob-vid {
     display: block;
     margin: 20px 0;
     height: 400px;

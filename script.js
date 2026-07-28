@@ -90,11 +90,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const userMessage = document.getElementById("userMessage")?.value.trim() || "";
 
       // WhatsApp Number (Country code + Number without '+' sign)
-      const phoneNumber = "916261406423"; // Aapka WhatsApp Number
+      const phoneNumber = "916261406423";
 
-      // Message Format
-      const textMessage = 
-`*New Project Inquiry!*
+      const textMessage =
+        `*New Project Inquiry!*
 
 *Name:* ${userName}
 *Email:* ${userEmail}
@@ -104,7 +103,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const encodedMessage = encodeURIComponent(textMessage);
       const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
-      // New tab me WhatsApp redirect karna
       window.open(whatsappURL, "_blank");
     });
   }

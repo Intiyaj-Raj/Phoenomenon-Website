@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const userMessage = document.getElementById("userMessage")?.value.trim() || "";
 
       // WhatsApp Number (Country code + Number without '+' sign)
-      const phoneNumber = "919133753252"; // Aapka WhatsApp Number
+      const phoneNumber = "916261406423"; // Aapka WhatsApp Number
 
       // Message Format
       const textMessage = 

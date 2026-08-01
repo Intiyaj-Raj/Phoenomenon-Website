@@ -421,3 +421,12 @@
     border-right: none;
   }
 }
+
+
+.infotive-logo{
+    width: 55px;
+  height:55px;
+  display:block;
+  flex-shrink:0;
+  
+}
